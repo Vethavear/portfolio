@@ -1,86 +1,182 @@
 @import "./utils.scss";
 
 $primary-color: #60fcf1;
+$primary-color-alt: #5ef8ee;
 $secondary-color: #15191c;
 $text-color: white;
 
+//  background: linear-gradient(to right, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 * {
+  outline: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
-
-.primary-color{
+h1,
+h2,
+h3, h4 {
+  font-family: "Balsamiq Sans", cursive;
+}
+.primary-color {
   color: $primary-color;
 }
-.nav{
-  height:8vh;
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: flex-start;
+    padding: 2rem;
+  }
+}
+.nav {
+  height: 8vh;
   width: 30%;
   position: fixed;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   background: #010203;
   box-shadow: -1px 1px 2px 0px #60fcf1;
 
-  ul{
-    height:100%;
+  ul {
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    li{
+    li {
       padding: 1rem 0;
-      a{
+      a {
         font-size: 1.3rem;
         color: $text-color;
-
       }
     }
   }
 }
 .showcase {
   height: 100vh;
-  background: url('../img/morze-francja-woda-ocean-3542952.jpg') center center/cover no-repeat;
+  background: url("../img/morze-francja-woda-ocean-3542952.jpg") center center/cover no-repeat;
   .showcase-content {
     height: 100%;
     background: rgba(1, 1, 1, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-    .header{
-      display:flex;
+    header {
+      display: flex;
       flex-direction: column;
-      width:50%;
-      h1{
+      width: 50%;
+      h1 {
         font-size: 10rem;
         align-self: flex-start;
       }
-      .whoami{
+      .whoami {
         color: $text-color;
-        padding-top:5rem;
+        padding-top: 5rem;
         line-height: 1.7;
         align-self: center;
-        width:50%;
-        font-size:1.5rem;
-        i{
-          font-size:3rem;
+        width: 50%;
+        font-size: 1.5rem;
+        i {
+          animation-name: moveDown;
+          animation-duration: 1s;
+          animation-iteration-count: 5;
+          font-size: 3rem;
         }
       }
       color: $primary-color;
-      padding-bottom:10rem;
+      padding-bottom: 10rem;
     }
   }
 }
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .stack {
   height: 100vh;
   background-image: linear-gradient(to bottom, #010306, #233a48, #317588, #3db7c2, #60fcf1);
-  .stack-content {
+  .container {
     height: 100%;
-    background: rgba(1, 1, 1, 0.5);
+    // background: rgba(1, 1, 1, 0.5);
+    padding-top: 10%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-
+    color: $text-color;
+    header {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .items {
+      padding-top: 5rem;
+      .item {
+        min-width: 300px;
+        min-height: 500px;
+        background: $secondary-color;
+        border-radius: 0.25rem;
+        .title {
+          min-height: 55px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        i {
+          padding: 1rem 0;
+          font-size: 3rem;
+          color: $primary-color;
+        }
+        .lists {
+          margin-top: 2rem;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          .list {
+            &:first-child {
+              border-right: 1px solid $primary-color;
+              border-bottom: 1px solid $primary-color;
+            }
+            &:last-child {
+              border-bottom: 1px solid $primary-color;
+            }
+            min-height: 190px;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            list-style-type: none;
+            li {
+              width:100%;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              font-family: 'Source Code Pro', monospace;
+              text-align:center;
+              padding: 0.35rem 0;
+            }
+          }
+        }
+      }
+    }
   }
+}
+#stack > div:nth-child(3) > div > ul:nth-child(1) {
 }
