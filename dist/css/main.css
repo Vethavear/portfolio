@@ -80,7 +80,8 @@
 
 h1,
 h2,
-h3, h4 {
+h3,
+h4 {
   font-family: "Balsamiq Sans", cursive;
 }
 
@@ -148,7 +149,7 @@ h3, h4 {
 
 .showcase .showcase-content {
   height: 100%;
-  background: rgba(1, 1, 1, 0.9);
+  background: rgba(1, 1, 1, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +232,7 @@ h3, h4 {
 }
 
 .stack {
-  height: 100vh;
+  min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#010306), color-stop(#233a48), color-stop(#317588), color-stop(#3db7c2), to(#60fcf1));
   background-image: linear-gradient(to bottom, #010306, #233a48, #317588, #3db7c2, #60fcf1);
 }
@@ -335,7 +336,61 @@ h3, h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   text-align: center;
   padding: 0.35rem 0;
+}
+
+.portfolio {
+  padding-top: 8vh;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#010306), color-stop(#233a48), color-stop(#317588), color-stop(#3db7c2), to(#60fcf1));
+  background-image: linear-gradient(to top, #010306, #233a48, #317588, #3db7c2, #60fcf1);
+}
+
+.portfolio header h1 {
+  font-size: 3rem;
+}
+
+.portfolio .portfolioMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.portfolio .portfolioMenu .portfolioBtn {
+  margin: 1rem 0.5rem;
+  background: #15191c;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 1.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.portfolio .portfolioMenu .portfolioBtn:hover {
+  color: #60fcf1;
+}
+
+.portfolio .portfolioProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .portfolioProjects .portfolioProject {
+  width: 300px;
 }
