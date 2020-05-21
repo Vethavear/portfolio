@@ -109,6 +109,7 @@ h4 {
 }
 
 .nav {
+  z-index: 1;
   height: 8vh;
   width: 30%;
   position: fixed;
@@ -372,7 +373,8 @@ h4 {
   border: none;
   border-radius: 0.25rem;
   color: white;
-  padding: 1.5rem 0.75rem;
+  width: 200px;
+  height: 70px;
   cursor: pointer;
   font-size: 1rem;
   -webkit-transition: all 0.25s;
@@ -384,13 +386,113 @@ h4 {
 }
 
 .portfolio .portfolioProjects {
+  padding: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .portfolio .portfolioProjects .portfolioProject {
-  width: 300px;
+  position: relative;
+  margin: 1rem 1rem;
+  width: 500px;
+  height: 600px;
+  background: #15191c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.25rem;
+}
+
+.portfolio .portfolioProjects .portfolioProject .title {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.portfolio .portfolioProjects .portfolioProject .img {
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.portfolio .portfolioProjects .portfolioProject .img img {
+  border: 1px solid #60fcf1;
+  width: 100%;
+}
+
+.portfolio .portfolioProjects .portfolioProject .description p {
+  color: white;
+  line-height: 1.4;
+}
+
+.portfolio .portfolioProjects .portfolioProject .description a {
+  color: #60fcf1;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.portfolio .portfolioProjects .portfolioProject .description a:hover {
+  color: white;
+}
+
+.portfolio .portfolioProjects .portfolioProject .techs {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 0.5rem;
+  color: white;
+}
+
+.portfolio .portfolioProjects .portfolioProject .techs p {
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.portfolio .portfolioProjects .portfolioProject .icons {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .portfolioProjects .portfolioProject .icons a i {
+  color: #60fcf1;
+  font-size: 4rem;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.portfolio .portfolioProjects .portfolioProject .icons a:hover i {
+  text-shadow: 0 0 10px #60fcf1;
+  color: #15191c;
+}
+
+.portfolio .portfolioProjects .littleHack {
+  margin: 1rem 1rem;
+  width: 500px;
+  height: 500px;
 }
