@@ -89,6 +89,23 @@ h4 {
   color: #60fcf1;
 }
 
+.btnWhite {
+  padding: 1rem 0.5rem;
+  background: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: black;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.btnWhite:hover {
+  background: none;
+  color: white;
+  border: 1px solid #60fcf1;
+}
+
 .items {
   display: -ms-grid;
   display: grid;
@@ -479,6 +496,10 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.portfolio .portfolioProjects .portfolioProject .icons a {
+  color: white;
 }
 
 .portfolio .portfolioProjects .portfolioProject .icons a i {
