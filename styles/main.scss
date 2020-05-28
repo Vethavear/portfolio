@@ -238,11 +238,11 @@ h4 {
       }
       .img {
         padding: 0 2rem;
-        max-height: 250px;
-        max-width:440px;
+        height: 250px;
+        width:440px;
         img {
           border: 1px solid $primary-color;
-          height:100%;
+          height: auto;
           width: 100%;
         }
       }

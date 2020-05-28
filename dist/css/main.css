@@ -428,13 +428,13 @@ h4 {
 
 .portfolio .portfolioProjects .portfolioProject .img {
   padding: 0 2rem;
-  max-height: 250px;
-  max-width: 440px;
+  height: 250px;
+  width: 440px;
 }
 
 .portfolio .portfolioProjects .portfolioProject .img img {
   border: 1px solid #60fcf1;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
