@@ -203,7 +203,41 @@ h4 {
       align-self: flex-start;
 }
 
-.showcase .showcase-content header .whoami {
+.showcase .showcase-content header .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase .showcase-content header .about .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.showcase .showcase-content header .about .img img {
+  height: auto;
+  width: 70%;
+  border-radius: 10%;
+}
+
+.showcase .showcase-content header .about .whoami {
+  background: #010203;
+  border-radius: 10%;
+  border: 1px solid #60fcf1;
+  padding: 0 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: white;
   padding-top: 5rem;
   line-height: 1.7;
@@ -214,7 +248,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-.showcase .showcase-content header .whoami i {
+.showcase .showcase-content header .about .whoami i {
   -webkit-animation-name: moveDown;
           animation-name: moveDown;
   -webkit-animation-duration: 1s;
