@@ -427,7 +427,8 @@ h4 {
 .portfolio .portfolioProjects .portfolioProject {
   position: relative;
   margin: 1rem 1rem;
-  width: 500px;
+  min-width: 500px;
+  width: 30%;
   height: 650px;
   background: #15191c;
   display: -webkit-box;
@@ -450,13 +451,13 @@ h4 {
 
 .portfolio .portfolioProjects .portfolioProject .img {
   padding: 0 2rem;
-  height: 250px;
-  width: 440px;
+  height: 30%;
+  width: 90%;
 }
 
 .portfolio .portfolioProjects .portfolioProject .img img {
   border: 1px solid #60fcf1;
-  height: auto;
+  height: 100%;
   width: 100%;
   padding: 1px;
 }
@@ -522,6 +523,6 @@ h4 {
 
 .portfolio .portfolioProjects .littleHack {
   margin: 1rem 1rem;
-  width: 500px;
-  height: 500px;
+  width: 30%;
+  height: 650px;
 }
