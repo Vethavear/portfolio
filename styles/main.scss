@@ -24,17 +24,21 @@ h4 {
 .primary-color {
   color: $primary-color;
 }
+.hideNav{
+  transform: translateX(100%);
+}
 .btnWhite{
   padding: 1rem 0.5rem;
-  background: white;
+  background: $secondary-color;
   border: none;
   border-radius: 0.25rem;
+  border: 1px solid $primary-color;
   cursor: pointer;
-  color: black;
+  color: $text-color;
   transition: 0.5s all;
   &:hover{
-    background: none;
-    color: $text-color;
+    background: $primary-color;
+    color: black;
     border: 1px solid $primary-color;
   }
 }
@@ -61,20 +65,21 @@ h4 {
   box-shadow: -1px 1px 2px 0px #60fcf1;
   // background: #60fcf1;
   // box-shadow: -1px 1px 2px 0px #010203;
+  transition: all 0.5s;
 
-  ul {
+  .links {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    li {
-      padding: 1rem 0;
-      a {
+    .link {
+     a{
+        padding: 1rem 0;
         font-size: 1.3rem;
         color: $text-color;
-        // color: black;
       }
+ 
     }
   }
 }
@@ -239,7 +244,8 @@ h4 {
     .portfolioProject {
       position: relative;
       margin: 1rem 1rem;
-      width: 500px;
+      min-width: 500px;
+      width: 30%;
       height: 650px;
       background: $secondary-color;
       display: flex;
@@ -252,12 +258,15 @@ h4 {
       }
       .img {
         padding: 0 2rem;
-        height: 250px;
-        width:440px;
+        height: 30%;
+        width:90%;
+        
         img {
+        
           border: 1px solid $primary-color;
-          height: auto;
+          height: 100%;
           width: 100%;
+          padding: 1px;
         }
       }
       .description {
@@ -312,8 +321,8 @@ h4 {
     }
     .littleHack {
       margin: 1rem 1rem;
-      width: 500px;
-      height: 500px;
+      width: 30%;
+      height: 650px;
     }
   }
 }
