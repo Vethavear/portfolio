@@ -89,20 +89,26 @@ h4 {
   color: #60fcf1;
 }
 
+.hideNav {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 .btnWhite {
   padding: 1rem 0.5rem;
-  background: white;
+  background: #15191c;
   border: none;
   border-radius: 0.25rem;
+  border: 1px solid #60fcf1;
   cursor: pointer;
-  color: black;
+  color: white;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
 .btnWhite:hover {
-  background: none;
-  color: white;
+  background: #60fcf1;
+  color: black;
   border: 1px solid #60fcf1;
 }
 
@@ -135,9 +141,11 @@ h4 {
   background: #010203;
   -webkit-box-shadow: -1px 1px 2px 0px #60fcf1;
           box-shadow: -1px 1px 2px 0px #60fcf1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.nav ul {
+.nav .links {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,11 +159,8 @@ h4 {
   list-style-type: none;
 }
 
-.nav ul li {
+.nav .links .link a {
   padding: 1rem 0;
-}
-
-.nav ul li a {
   font-size: 1.3rem;
   color: white;
 }
@@ -453,6 +458,7 @@ h4 {
   border: 1px solid #60fcf1;
   height: auto;
   width: 100%;
+  padding: 1px;
 }
 
 .portfolio .portfolioProjects .portfolioProject .description p {
