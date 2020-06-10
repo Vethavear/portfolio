@@ -94,6 +94,21 @@ h4 {
           transform: translateX(100%);
 }
 
+.hideProject {
+  margin: 0 !important;
+  min-width: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.removeOpacity {
+  opacity: 0;
+}
+
+.displayNone {
+  display: none !important;
+}
+
 .btnWhite {
   padding: 1rem 0.5rem;
   background: #15191c;
@@ -459,6 +474,8 @@ h4 {
 }
 
 .portfolio .portfolioProjects .portfolioProject {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   position: relative;
   margin: 1rem 1rem;
   min-width: 500px;
@@ -476,6 +493,11 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.25rem;
+}
+
+.portfolio .portfolioProjects .portfolioProject * {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .portfolio .portfolioProjects .portfolioProject .title {
