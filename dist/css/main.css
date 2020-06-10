@@ -478,7 +478,7 @@ h4 {
   margin: 1rem 1rem;
   min-width: 500px;
   width: 30%;
-  height: 650px;
+  height: 600px;
   background: #15191c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +505,7 @@ h4 {
 
 .portfolio .portfolioProjects .portfolioProject .img {
   padding: 0 2rem;
-  height: 30%;
+  height: 35%;
   width: 90%;
 }
 
@@ -579,5 +579,5 @@ h4 {
   margin: 1rem 1rem;
   min-width: 500px;
   width: 30%;
-  height: 650px;
+  height: 600px;
 }
