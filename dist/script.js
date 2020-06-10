@@ -23,7 +23,7 @@ const showProject = el => {
         for (i = 0; i < projectChildren.length; i++) {
             projectChildren.item(i).classList.remove('removeOpacity');
         }
-    }, 500);
+    }, 100);
 }
 
 const filter = (type) => {
