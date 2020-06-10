@@ -474,8 +474,6 @@ h4 {
 }
 
 .portfolio .portfolioProjects .portfolioProject {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   position: relative;
   margin: 1rem 1rem;
   min-width: 500px;
@@ -579,6 +577,7 @@ h4 {
 
 .portfolio .portfolioProjects .littleHack {
   margin: 1rem 1rem;
+  min-width: 500px;
   width: 30%;
   height: 650px;
 }
