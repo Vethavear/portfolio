@@ -27,17 +27,17 @@ h4 {
 .hideNav {
   transform: translateX(100%);
 }
-.hideProject{
+.hideProject {
   margin: 0 !important;
-  min-width:0 !important;
-  width:0 !important;
-  height:0 !important;
+  min-width: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
 }
-.removeOpacity{
-  opacity:0;
+.removeOpacity {
+  opacity: 0;
 }
-.displayNone{
-  display:none !important;
+.displayNone {
+  display: none !important;
 }
 .btnWhite {
   padding: 1rem 0.5rem;
@@ -113,13 +113,13 @@ h4 {
       .about {
         display: flex;
         .img {
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
-          flex:1;
-          img{
+          flex: 1;
+          img {
             height: auto;
-            width:70%;
+            width: 70%;
             border-radius: 10%;
             // border: 2px $primary-color solid;
           }
@@ -129,7 +129,7 @@ h4 {
           border-radius: 10%;
           border: 1px solid $primary-color;
           padding: 0 2rem;
-          flex:1;
+          flex: 1;
           color: $text-color;
           padding-top: 5rem;
           line-height: 1.7;
@@ -265,7 +265,6 @@ h4 {
     }
   }
   .portfolioProjects {
- 
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -274,7 +273,7 @@ h4 {
     height: auto;
     flex-wrap: wrap;
     .portfolioProject {
-      *{
+      * {
         transition: all 0.5s;
       }
       position: relative;
@@ -317,6 +316,9 @@ h4 {
         }
       }
       .techs {
+        padding-top: 1rem;
+        position: relative;
+        overflow: visible;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -327,6 +329,15 @@ h4 {
           font-family: "Source Code Pro", monospace;
 
           text-align: center;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: -15%;
+          right: 30%;
+          left: 30%;
+          height: 1px;
+          background: $primary-color;
         }
       }
       .icons {
@@ -357,6 +368,44 @@ h4 {
       min-width: 500px;
       width: 30%;
       height: 600px;
+    }
+  }
+  padding-bottom: 5rem;
+}
+.footer {
+  position: relative;
+  padding: 2rem 0;
+  background: #010306;
+  box-shadow: 0px -3px 3px 0px $primary-color;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    .left {
+      width:100%;
+      display: flex;
+      justify-content: space-evenly;
+      i {
+        font-size: 4rem;
+        color: $primary-color;
+        transition: all 0.5s;
+        &:hover {
+           
+            color: $text-color;
+          }
+      }
+    }
+    .right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      p {
+        color: $primary-color;
+      }
     }
   }
 }
