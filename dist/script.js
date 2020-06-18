@@ -1,6 +1,5 @@
 const nav = document.querySelector('.nav');
 const portfolioProjects = document.querySelectorAll('.portfolioProject');
-// portfolioProjects.item(0).children.
 const portfolioMenu = document.querySelector('#portfolioMenu');
 let scroll_position = 0;
 let scroll_direction;
@@ -43,15 +42,35 @@ const filter = (type) => {
     }
 }
 
-portfolioMenu.addEventListener('click', e => {
+const isInViewport = el => {
+    const rect = el.getBoundingClientRect();
 
-    if (e.target.classList.contains('portfolioBtn')) {
-        filter(e.target.dataset.type);
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+const hideProjects = () =>{
+    portfolioProjects.forEach(project => {
+        hideProject(project);
+    })
+}
+hideProjects();
+const showProjects = () => {
+
+    if (isInViewport(portfolioMenu)) {
+
+        portfolioProjects.forEach(project => {
+            showProject(project);
+        })
     }
-})
+}
 
-
-window.addEventListener('scroll', e => {
+const showNav = () => {
     scroll_direction = (document.body.getBoundingClientRect()).top > scroll_position ? 'up' : 'down';
     scroll_position = (document.body.getBoundingClientRect()).top;
     if (scroll_direction == 'down') {
@@ -59,5 +78,31 @@ window.addEventListener('scroll', e => {
     } else {
         nav.classList.remove('hideNav');
     }
-});
+}
 
+portfolioMenu.addEventListener('click', e => {
+    if (e.target.classList.contains('portfolioBtn')) {
+        filter(e.target.dataset.type);
+    }
+})
+
+
+window.addEventListener('scroll', showNav);
+window.addEventListener('scroll', showProjects);
+
+
+
+$('.links, .link, a').on('click', function (event) {
+    if (this.hash !== '') {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 100
+
+        },
+            800
+        );
+    }
+});
