@@ -1,4 +1,5 @@
-//smartphones
+@import "./utils.scss";
+
 
 * {
   overflow-x: hidden;
@@ -16,15 +17,48 @@
 .littleHack{
   display: none;
 }
+
+.nav{
+  display:none;
+  top: initial;
+  bottom:0;
+  height: auto;
+  z-index:1;
+  box-shadow: none;
+  border-top: 1px solid $primary-color;
+  border-left: 1px solid $primary-color;
+  .links{
+    flex-direction: column;
+    .link{
+     
+        padding: 2rem 0.5rem;
+     
+    }
+  }
+  &::before{
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba($color: #000000, $alpha: 0.8);
+  }
+}
 .showcase {
   min-height: 100vh;
-  height: 100%;
+  height:auto;
+
   .showcase-content {
+  min-height: 100vh;
     padding-top: 2rem;
+
     .header {
+      height: auto;
       h1 {
         align-self: center;
-        font-size: 2rem;
+        font-size: 3rem;
       }
       width: 100%;
       .about {
@@ -33,8 +67,12 @@
           padding-top: 2rem;
           margin-top: 1rem;
           width: 90%;
-          .fas {
-            font-size: 1.5rem;
+          overflow:hidden;
+          .center{
+            overflow:hidden;
+            .fas {
+              font-size: 1.5rem;
+            }
           }
         }
       }

@@ -54,7 +54,7 @@ const isInViewport = el => {
     );
 };
 
-const hideProjects = () =>{
+const hideProjects = () => {
     portfolioProjects.forEach(project => {
         hideProject(project);
     })
@@ -70,7 +70,7 @@ const showProjects = () => {
     }
 }
 
-const showNav = () => {
+const slideNav = () => {
     scroll_direction = (document.body.getBoundingClientRect()).top > scroll_position ? 'up' : 'down';
     scroll_position = (document.body.getBoundingClientRect()).top;
     if (scroll_direction == 'down') {
@@ -86,8 +86,13 @@ portfolioMenu.addEventListener('click', e => {
     }
 })
 
-
-window.addEventListener('scroll', showNav);
+const isMobile = () => {
+    return window.orientation > -1;
+}
+if (isMobile()) {
+} else {
+    window.addEventListener('scroll', slideNav);
+}
 window.addEventListener('scroll', showProjects);
 
 
