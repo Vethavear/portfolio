@@ -1,5 +1,200 @@
-@media (max-width: 500px) {
-  * {
-    overflow-x: hidden;
-  }
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 2rem;
+}
+
+.p3 {
+  padding: 3rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.ts1 {
+  font-size: 1.1rem;
+}
+
+.ts2 {
+  font-size: 1.2rem;
+}
+
+.ts3 {
+  font-size: 1.3rem;
+}
+
+.btext {
+  font-size: 2rem;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+.btext {
+  font-size: 1.1rem;
+}
+
+.ts3 {
+  font-size: 1rem;
+}
+
+.py-2 {
+  padding: 1rem 0;
+}
+
+.littleHack {
+  display: none;
+}
+
+.nav {
+  display: none;
+  top: initial;
+  bottom: 0;
+  height: auto;
+  z-index: 1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-top: 1px solid #60fcf1;
+  border-left: 1px solid #60fcf1;
+}
+
+.nav .links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav .links .link {
+  padding: 2rem 0.5rem;
+}
+
+.nav::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.showcase {
+  min-height: 100vh;
+  height: auto;
+}
+
+.showcase .showcase-content {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.showcase .showcase-content .header {
+  height: auto;
+  width: 100%;
+}
+
+.showcase .showcase-content .header h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3rem;
+}
+
+.showcase .showcase-content .header .about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.showcase .showcase-content .header .about .whoami {
+  padding-top: 2rem;
+  margin-top: 1rem;
+  width: 90%;
+  overflow: hidden;
+}
+
+.showcase .showcase-content .header .about .whoami .center {
+  overflow: hidden;
+}
+
+.showcase .showcase-content .header .about .whoami .center .fas {
+  font-size: 1.5rem;
+}
+
+.stack .container .items {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.portfolio .portfolioMenu .portfolioBtn {
+  font-size: 0.8rem;
+  margin: 1rem 0.2rem;
+  width: 300px;
+  border-radius: 0.6rem;
+}
+
+.portfolio .portfolioProjects {
+  padding: 0;
+  padding-bottom: 4rem;
+}
+
+.portfolio .portfolioProjects .portfolioProject {
+  min-width: 100%;
+  margin: 1rem 0;
+  border-radius: 0;
+}
+
+.portfolio .portfolioProjects .portfolioProject .img {
+  padding: 0;
+  overflow: hidden;
+  width: 95%;
+}
+
+.portfolio .portfolioProjects .portfolioProject a {
+  overflow: visible;
 }

@@ -119,6 +119,15 @@ h4 {
   color: white;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btnWhite:hover {
@@ -199,7 +208,7 @@ h4 {
           align-items: center;
 }
 
-.showcase .showcase-content header {
+.showcase .showcase-content .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,19 +221,19 @@ h4 {
   padding-bottom: 10rem;
 }
 
-.showcase .showcase-content header h1 {
+.showcase .showcase-content .header h1 {
   font-size: 10rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-.showcase .showcase-content header .about {
+.showcase .showcase-content .header .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.showcase .showcase-content header .about .img {
+.showcase .showcase-content .header .about .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,13 +248,13 @@ h4 {
           flex: 1;
 }
 
-.showcase .showcase-content header .about .img img {
+.showcase .showcase-content .header .about .img img {
   height: auto;
   width: 70%;
   border-radius: 10%;
 }
 
-.showcase .showcase-content header .about .whoami {
+.showcase .showcase-content .header .about .whoami {
   background: #010203;
   border-radius: 10%;
   border: 1px solid #60fcf1;
@@ -260,10 +269,9 @@ h4 {
       -ms-grid-row-align: center;
       align-self: center;
   width: 50%;
-  font-size: 1.5rem;
 }
 
-.showcase .showcase-content header .about .whoami i {
+.showcase .showcase-content .header .about .whoami .fas {
   -webkit-animation-name: moveDown;
           animation-name: moveDown;
   -webkit-animation-duration: 1s;
@@ -354,7 +362,7 @@ h4 {
           align-items: center;
 }
 
-.stack .container .items .item i {
+.stack .container .items .item .fas, .stack .container .items .item .far, .stack .container .items .item .fab {
   padding: 1rem 0;
   font-size: 3rem;
   color: #60fcf1;
@@ -436,7 +444,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 8vh;
+  height: auto;
 }
 
 .portfolio .portfolioMenu .portfolioBtn {
@@ -577,14 +585,14 @@ h4 {
   color: white;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a i {
+.portfolio .portfolioProjects .portfolioProject .icons a .fas, .portfolio .portfolioProjects .portfolioProject .icons a .far, .portfolio .portfolioProjects .portfolioProject .icons a .fab {
   color: #60fcf1;
   font-size: 4rem;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a:hover i {
+.portfolio .portfolioProjects .portfolioProject .icons a:hover .fas, .portfolio .portfolioProjects .portfolioProject .icons a:hover .far, .portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
   text-shadow: 0 0 10px #60fcf1;
   color: #15191c;
 }
@@ -623,14 +631,14 @@ h4 {
           justify-content: space-evenly;
 }
 
-.footer .container .left i {
+.footer .container .left .fas, .footer .container .left .far, .footer .container .left .fab {
   font-size: 4rem;
   color: #60fcf1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.footer .container .left i:hover {
+.footer .container .left .fas:hover, .footer .container .left .far:hover, .footer .container .left .fab:hover {
   color: white;
 }
 
