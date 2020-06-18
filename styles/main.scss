@@ -102,7 +102,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    header {
+    .header {
       display: flex;
       flex-direction: column;
       width: 50%;
@@ -135,8 +135,7 @@ h4 {
           line-height: 1.7;
           align-self: center;
           width: 50%;
-          font-size: 1.5rem;
-          i {
+          .fas {
             animation-name: moveDown;
             animation-duration: 1s;
             animation-iteration-count: 5;
@@ -193,7 +192,7 @@ h4 {
           flex-direction: column;
           align-items: center;
         }
-        i {
+        .fas, .far,.fab {
           padding: 1rem 0;
           font-size: 3rem;
           color: $primary-color;
@@ -349,13 +348,13 @@ h4 {
         justify-content: space-between;
         a {
           color: white;
-          i {
+          .fas, .far,.fab {
             color: $primary-color;
             font-size: 4rem;
             transition: 0.25s all;
           }
           &:hover {
-            i {
+            .fas, .far,.fab {
               text-shadow: 0 0 10px $primary-color;
               color: $secondary-color;
             }
@@ -384,7 +383,7 @@ h4 {
       width:100%;
       display: flex;
       justify-content: space-evenly;
-      i {
+      .fas, .far,.fab {
         font-size: 4rem;
         color: $primary-color;
         transition: all 0.5s;

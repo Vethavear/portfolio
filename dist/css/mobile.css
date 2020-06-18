@@ -1,5 +1,57 @@
-@media (max-width: 500px) {
-  * {
-    overflow-x: hidden;
-  }
+* {
+  overflow-x: hidden;
+}
+
+.btext {
+  font-size: 1.1rem;
+}
+
+.ts3 {
+  font-size: 1rem;
+}
+
+.py-2 {
+  padding: 1rem 0;
+}
+
+.showcase {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.showcase .showcase-content {
+  padding-top: 2rem;
+}
+
+.showcase .showcase-content .header {
+  width: 100%;
+}
+
+.showcase .showcase-content .header h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2rem;
+}
+
+.showcase .showcase-content .header .about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.showcase .showcase-content .header .about .whoami {
+  padding-top: 2rem;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.showcase .showcase-content .header .about .whoami .fas {
+  font-size: 1.5rem;
+}
+
+.stack .container .items {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
