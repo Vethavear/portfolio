@@ -151,6 +151,12 @@
           flex-direction: column;
 }
 
+@media (orientation: landscape) {
+  .showcase .showcase-content .header .about .img img {
+    width: 40%;
+  }
+}
+
 .showcase .showcase-content .header .about .whoami {
   padding-top: 2rem;
   margin-top: 1rem;

@@ -63,6 +63,15 @@
       width: 100%;
       .about {
         flex-direction: column;
+
+        @media (orientation: landscape) {
+          .img{
+            img{
+  width:40%;
+            }
+          }
+        }
+   
         .whoami {
           padding-top: 2rem;
           margin-top: 1rem;

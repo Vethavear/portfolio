@@ -251,12 +251,12 @@ h4 {
 .showcase .showcase-content .header .about .img img {
   height: auto;
   width: 70%;
-  border-radius: 10%;
+  border-radius: 3rem;
 }
 
 .showcase .showcase-content .header .about .whoami {
   background: #010203;
-  border-radius: 10%;
+  border-radius: 3rem;
   border: 1px solid #60fcf1;
   padding: 0 2rem;
   -webkit-box-flex: 1;
