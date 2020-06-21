@@ -21,16 +21,15 @@
 }
 .hideLines {
   .burger-line {
-    width: 0 !important;
-    height: 0 !important;
+    display: none !important;
+
   }
   .burgerIcon {
-    width: auto !important;
-    height: auto !important;
+    display: initial !important
+
   }
 }
 .burger {
-
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -42,7 +41,9 @@
   height: 50px;
   width: 50px;
   background: rgba($color: $tertiary-color, $alpha: 0.8);
-  border-bottom-left-radius: 0.2remw;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom: 1px solid $primary-color;
+  border-left: 1px solid $primary-color;
   .burger-line {
     z-index: 2;
     width: 70%;
@@ -50,8 +51,7 @@
     background: $primary-color;
   }
   .burgerIcon {
-    width: 0;
-    height: 0;
+    display: none;
     .fas {
       color: $primary-color;
       font-size: 1.5rem;
@@ -73,17 +73,6 @@
     .link {
       padding: 2rem 0.5rem;
     }
-  }
-
-  &::before {
-    content: "";
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba($color: #000000, $alpha: 0.8);
   }
 }
 .showcase {

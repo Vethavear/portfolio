@@ -94,13 +94,11 @@
 }
 
 .hideLines .burger-line {
-  width: 0 !important;
-  height: 0 !important;
+  display: none !important;
 }
 
 .hideLines .burgerIcon {
-  width: auto !important;
-  height: auto !important;
+  display: initial !important;
 }
 
 .burger {
@@ -124,7 +122,9 @@
   height: 50px;
   width: 50px;
   background: rgba(1, 2, 3, 0.8);
-  border-bottom-left-radius: 0.2remw;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom: 1px solid #60fcf1;
+  border-left: 1px solid #60fcf1;
 }
 
 .burger .burger-line {
@@ -135,8 +135,7 @@
 }
 
 .burger .burgerIcon {
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .burger .burgerIcon .fas {
@@ -168,17 +167,6 @@
 
 .nav .links .link {
   padding: 2rem 0.5rem;
-}
-
-.nav::before {
-  content: "";
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .showcase {
