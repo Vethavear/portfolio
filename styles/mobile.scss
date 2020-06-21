@@ -1,6 +1,5 @@
 @import "./utils.scss";
 
-
 * {
   overflow-x: hidden;
 }
@@ -14,44 +13,85 @@
 .py-2 {
   padding: 1rem 0;
 }
-.littleHack{
+.littleHack {
   display: none;
 }
+.showMenu {
+  transform: translateX(0) !important;
+}
+.hideLines {
+  .burger-line {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .burgerIcon {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+.burger {
 
-.nav{
-  display:none;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background: rgba($color: $tertiary-color, $alpha: 0.8);
+  border-bottom-left-radius: 0.2remw;
+  .burger-line {
+    z-index: 2;
+    width: 70%;
+    height: 2px;
+    background: $primary-color;
+  }
+  .burgerIcon {
+    width: 0;
+    height: 0;
+    .fas {
+      color: $primary-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+.nav {
+  transform: translateX(100%);
+  transition: all 0.5s;
   top: initial;
-  bottom:0;
+  bottom: 0;
   height: auto;
-  z-index:1;
+  z-index: 1;
   box-shadow: none;
   border-top: 1px solid $primary-color;
   border-left: 1px solid $primary-color;
-  .links{
+  .links {
     flex-direction: column;
-    .link{
-     
-        padding: 2rem 0.5rem;
-     
+    .link {
+      padding: 2rem 0.5rem;
     }
   }
-  &::before{
-    content: '';
+
+  &::before {
+    content: "";
     position: fixed;
     z-index: -1;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba($color: #000000, $alpha: 0.8);
   }
 }
 .showcase {
   min-height: 100vh;
-  height:auto;
+  height: auto;
 
   .showcase-content {
-  min-height: 100vh;
+    min-height: 100vh;
     padding-top: 2rem;
 
     .header {
@@ -65,20 +105,20 @@
         flex-direction: column;
 
         @media (orientation: landscape) {
-          .img{
-            img{
-  width:40%;
+          .img {
+            img {
+              width: 40%;
             }
           }
         }
-   
+
         .whoami {
           padding-top: 2rem;
           margin-top: 1rem;
           width: 90%;
-          overflow:hidden;
-          .center{
-            overflow:hidden;
+          overflow: hidden;
+          .center {
+            overflow: hidden;
             .fas {
               font-size: 1.5rem;
             }
@@ -113,12 +153,17 @@
       min-width: 100%;
       margin: 1rem 0;
       border-radius: 0;
-      .img{
+      @media (orientation: landscape) {
+        .img {
+          height: 50%;
+        }
+      }
+      .img {
         padding: 0;
         overflow: hidden;
         width: 95%;
       }
-      a{
+      a {
         overflow: visible;
       }
     }

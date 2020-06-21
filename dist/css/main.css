@@ -155,6 +155,10 @@ h4 {
   padding: 2rem;
 }
 
+.burger {
+  display: none;
+}
+
 .nav {
   z-index: 1;
   height: 8vh;
@@ -362,7 +366,9 @@ h4 {
           align-items: center;
 }
 
-.stack .container .items .item .fas, .stack .container .items .item .far, .stack .container .items .item .fab {
+.stack .container .items .item .fas,
+.stack .container .items .item .far,
+.stack .container .items .item .fab {
   padding: 1rem 0;
   font-size: 3rem;
   color: #60fcf1;
@@ -585,14 +591,18 @@ h4 {
   color: white;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a .fas, .portfolio .portfolioProjects .portfolioProject .icons a .far, .portfolio .portfolioProjects .portfolioProject .icons a .fab {
+.portfolio .portfolioProjects .portfolioProject .icons a .fas,
+.portfolio .portfolioProjects .portfolioProject .icons a .far,
+.portfolio .portfolioProjects .portfolioProject .icons a .fab {
   color: #60fcf1;
   font-size: 4rem;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a:hover .fas, .portfolio .portfolioProjects .portfolioProject .icons a:hover .far, .portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
+.portfolio .portfolioProjects .portfolioProject .icons a:hover .fas,
+.portfolio .portfolioProjects .portfolioProject .icons a:hover .far,
+.portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
   text-shadow: 0 0 10px #60fcf1;
   color: #15191c;
 }
@@ -631,14 +641,18 @@ h4 {
           justify-content: space-evenly;
 }
 
-.footer .container .left .fas, .footer .container .left .far, .footer .container .left .fab {
+.footer .container .left .fas,
+.footer .container .left .far,
+.footer .container .left .fab {
   font-size: 4rem;
   color: #60fcf1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.footer .container .left .fas:hover, .footer .container .left .far:hover, .footer .container .left .fab:hover {
+.footer .container .left .fas:hover,
+.footer .container .left .far:hover,
+.footer .container .left .fab:hover {
   color: white;
 }
 
