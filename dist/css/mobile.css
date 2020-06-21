@@ -88,8 +88,66 @@
   display: none;
 }
 
-.nav {
+.showMenu {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+.hideLines .burger-line {
+  display: none !important;
+}
+
+.hideLines .burgerIcon {
+  display: initial !important;
+}
+
+.burger {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background: rgba(1, 2, 3, 0.8);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom: 1px solid #60fcf1;
+  border-left: 1px solid #60fcf1;
+}
+
+.burger .burger-line {
+  z-index: 2;
+  width: 70%;
+  height: 2px;
+  background: #60fcf1;
+}
+
+.burger .burgerIcon {
   display: none;
+}
+
+.burger .burgerIcon .fas {
+  color: #60fcf1;
+  font-size: 1.5rem;
+}
+
+.nav {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   top: initial;
   bottom: 0;
   height: auto;
@@ -109,17 +167,6 @@
 
 .nav .links .link {
   padding: 2rem 0.5rem;
-}
-
-.nav::before {
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .showcase {
@@ -149,6 +196,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (orientation: landscape) {
+  .showcase .showcase-content .header .about .img img {
+    width: 40%;
+  }
 }
 
 .showcase .showcase-content .header .about .whoami {
@@ -187,6 +240,12 @@
   min-width: 100%;
   margin: 1rem 0;
   border-radius: 0;
+}
+
+@media (orientation: landscape) {
+  .portfolio .portfolioProjects .portfolioProject .img {
+    height: 50%;
+  }
 }
 
 .portfolio .portfolioProjects .portfolioProject .img {

@@ -1,6 +1,8 @@
 const nav = document.querySelector('.nav');
 const portfolioProjects = document.querySelectorAll('.portfolioProject');
 const portfolioMenu = document.querySelector('#portfolioMenu');
+const burgerIcon = document.querySelector('.burgerIcon');
+const burger = document.querySelector('.burger');
 let scroll_position = 0;
 let scroll_direction;
 
@@ -44,7 +46,6 @@ const filter = (type) => {
 
 const isInViewport = el => {
     const rect = el.getBoundingClientRect();
-
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -80,11 +81,7 @@ const slideNav = () => {
     }
 }
 
-portfolioMenu.addEventListener('click', e => {
-    if (e.target.classList.contains('portfolioBtn')) {
-        filter(e.target.dataset.type);
-    }
-})
+
 
 const isMobile = () => {
     return window.orientation > -1;
@@ -94,9 +91,22 @@ if (isMobile()) {
     window.addEventListener('scroll', slideNav);
 }
 window.addEventListener('scroll', showProjects);
+portfolioMenu.addEventListener('click', e => {
+    if (e.target.classList.contains('portfolioBtn')) {
+        filter(e.target.dataset.type);
+    }
+})
+burger.addEventListener('click', e => {
+    nav.classList.toggle('showMenu');
+    burger.classList.toggle('hideLines');
 
+})
+nav.addEventListener('click', e => {
+    nav.classList.toggle('showMenu');
+    burgerIcon.classList.toggle('hide');
+    burger.classList.toggle('hideLines');
 
-
+})
 $('.links, .link, a').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
