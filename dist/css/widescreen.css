@@ -68,6 +68,10 @@
   font-size: 2rem;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 .littleHack {
   display: none;
 }

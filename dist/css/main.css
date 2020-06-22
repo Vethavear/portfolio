@@ -68,6 +68,10 @@
   font-size: 2rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -185,6 +189,10 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
+}
+
+.nav .links .link {
+  overflow: hidden;
 }
 
 .nav .links .link a {
