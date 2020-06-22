@@ -127,6 +127,12 @@
   border-left: 1px solid #60fcf1;
 }
 
+@media (orientation: landscape) {
+  .burger {
+    height: 15%;
+  }
+}
+
 .burger .burger-line {
   z-index: 2;
   width: 70%;
@@ -167,6 +173,31 @@
 
 .nav .links .link {
   padding: 2rem 0.5rem;
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    height: 8vh;
+    bottom: 0;
+    top: initial;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    border-top: 1px solid #60fcf1;
+  }
+  .nav .links {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .footer {
+    margin-bottom: 8vh;
+  }
 }
 
 .showcase {
@@ -240,11 +271,20 @@
   min-width: 100%;
   margin: 1rem 0;
   border-radius: 0;
+  min-height: 600px;
+  height: auto;
+}
+
+.portfolio .portfolioProjects .portfolioProject .techs {
+  padding-bottom: 5rem;
 }
 
 @media (orientation: landscape) {
   .portfolio .portfolioProjects .portfolioProject .img {
     height: 50%;
+  }
+  .portfolio .portfolioProjects .portfolioProject .techs {
+    padding-bottom: 5rem;
   }
 }
 

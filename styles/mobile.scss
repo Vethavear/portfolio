@@ -22,11 +22,9 @@
 .hideLines {
   .burger-line {
     display: none !important;
-
   }
   .burgerIcon {
-    display: initial !important
-
+    display: initial !important;
   }
 }
 .burger {
@@ -39,6 +37,9 @@
   top: 0;
   right: 0;
   height: 10%;
+  @media (orientation: landscape) {
+    height: 15%;
+  }
   width: 15%;
   background: rgba($color: $tertiary-color, $alpha: 0.8);
   border-bottom-left-radius: 0.2rem;
@@ -58,6 +59,7 @@
     }
   }
 }
+
 .nav {
   transform: translateX(100%);
   transition: all 0.5s;
@@ -73,6 +75,26 @@
     .link {
       padding: 2rem 0.5rem;
     }
+  }
+}
+@media (orientation: portrait) and (min-width: 700px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    height: 8vh;
+    bottom: 0;
+    top: initial;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid $primary-color;
+    .links {
+      flex-direction: initial;
+    }
+  }
+  .footer{
+    margin-bottom: 8vh;
   }
 }
 .showcase {
@@ -142,9 +164,17 @@
       min-width: 100%;
       margin: 1rem 0;
       border-radius: 0;
+      min-height: 600px;
+      height: auto;
+      .techs {
+        padding-bottom: 5rem;
+      }
       @media (orientation: landscape) {
         .img {
           height: 50%;
+        }
+        .techs {
+          padding-bottom: 5rem;
         }
       }
       .img {
