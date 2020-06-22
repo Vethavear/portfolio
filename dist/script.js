@@ -107,7 +107,7 @@ nav.addEventListener('click', e => {
     burger.classList.toggle('hideLines');
 
 })
-$('.links, .link, a').on('click', function (event) {
+$('.links .link a').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
 
