@@ -4,6 +4,7 @@ const portfolioMenu = document.querySelector('#portfolioMenu');
 const burgerIcon = document.querySelector('.burgerIcon');
 const burger = document.querySelector('.burger');
 let scroll_position = 0;
+let projectsVisible = false;
 let scroll_direction;
 
 
@@ -63,11 +64,14 @@ const hideProjects = () => {
 hideProjects();
 const showProjects = () => {
 
-    if (isInViewport(portfolioMenu)) {
+    if (!projectsVisible) {
 
-        portfolioProjects.forEach(project => {
-            showProject(project);
-        })
+        if (isInViewport(portfolioMenu)) {
+            portfolioProjects.forEach(project => {
+                showProject(project);
+            })
+            projectsVisible = true;
+        }
     }
 }
 
