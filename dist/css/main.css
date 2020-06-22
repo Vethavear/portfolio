@@ -68,8 +68,11 @@
   font-size: 2rem;
 }
 
-* {
+body {
   overflow-x: hidden;
+}
+
+* {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
