@@ -1,5 +1,8 @@
 @import './utils.scss';
-
+* {
+    overflow-x: hidden;
+  }
+  
 .littleHack{
     display: none;
 }
