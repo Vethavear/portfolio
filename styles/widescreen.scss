@@ -1,0 +1,59 @@
+@import './utils.scss';
+
+.littleHack{
+    display: none;
+}
+@media (orientation: portrait) {
+
+.nav{
+    bottom: 0;
+    top: initial;
+width:100%;
+box-shadow: none;
+border-top: 1px solid $primary-color;
+}
+
+}
+.showcase {
+    min-height: 100vh;
+    height: auto;
+
+    .showcase-content {
+        min-height: 100vh;
+        padding-top: 2rem;
+
+        .header {
+            height: auto;
+            h1 {
+                align-self: center;
+            }
+            width: 100%;
+            .about {
+                .whoami {
+                    padding-top: 2rem;
+                    margin-top: 1rem;
+                    width: 90%;
+                    overflow: hidden;
+                    .center {
+                        overflow: hidden;
+                        .fas {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (orientation: portrait) {
+    .stack {
+        .container {
+            .items {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    .footer{
+        margin-bottom: 8vh;
+    }
+}
