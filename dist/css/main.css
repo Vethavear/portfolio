@@ -90,7 +90,7 @@ h4 {
 }
 
 .primary-color {
-  color: #60fcf1;
+  color: #FFFFFA;
 }
 
 .hideNav {
@@ -99,10 +99,12 @@ h4 {
 }
 
 .hideProject {
+  display: none;
   margin: 0 !important;
   min-width: 0 !important;
   width: 0 !important;
   height: 0 !important;
+  border: 0 !important;
 }
 
 .removeOpacity {
@@ -115,12 +117,13 @@ h4 {
 
 .btnWhite {
   padding: 1rem 0.5rem;
-  background: #15191c;
+  background: #FFFFFA;
   border: none;
   border-radius: 0.25rem;
-  border: 1px solid #60fcf1;
+  border: 2px solid #141414;
   cursor: pointer;
-  color: white;
+  color: #141414;
+  font-size: 1.1rem;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   display: -webkit-box;
@@ -135,9 +138,18 @@ h4 {
 }
 
 .btnWhite:hover {
-  background: #60fcf1;
+  background: #FEEFEB;
   color: black;
-  border: 1px solid #60fcf1;
+}
+
+.heading {
+  background: #6279B8;
+  font-size: 4rem;
+  padding: 0.5rem;
+  color: white;
+  border-bottom: 2px solid #141414;
+  border-top: 2px solid #141414;
+  text-shadow: 2px 1px #141414;
 }
 
 .items {
@@ -170,9 +182,10 @@ h4 {
   position: fixed;
   top: 0;
   right: 0;
-  background: #010203;
-  -webkit-box-shadow: -1px 1px 2px 0px #60fcf1;
-          box-shadow: -1px 1px 2px 0px #60fcf1;
+  background: #6279B8;
+  border-bottom: 3px solid #141414;
+  border-left: 3px solid #141414;
+  border-bottom-left-radius: 2.5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -203,12 +216,11 @@ h4 {
 
 .showcase {
   height: 100vh;
-  background: url("../img/morze-francja-woda-ocean-3542952.jpg") center center/cover no-repeat;
+  background: url("../img/bg.jpg") center center/cover no-repeat;
 }
 
 .showcase .showcase-content {
   height: 100%;
-  background: rgba(1, 1, 1, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,14 +241,16 @@ h4 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  color: #60fcf1;
+  color: #FFFFFA;
   padding-bottom: 10rem;
 }
 
-.showcase .showcase-content .header h1 {
+.showcase .showcase-content .header .mainHeading {
   font-size: 10rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  color: #6279B8;
+  text-shadow: 3px 1px #141414;
 }
 
 .showcase .showcase-content .header .about {
@@ -264,12 +278,13 @@ h4 {
   height: auto;
   width: 80%;
   border-radius: 3rem;
+  border: 3px solid #141414;
 }
 
 .showcase .showcase-content .header .about .whoami {
-  background: #010203;
+  background: #6279B8;
   border-radius: 3rem;
-  border: 1px solid #60fcf1;
+  border: 3px solid #141414;
   padding: 0 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -324,14 +339,15 @@ h4 {
 }
 
 .stack {
+  padding-top: 8vh;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#010203), color-stop(#233a48), color-stop(#317588), color-stop(#3db7c2), to(#60fcf1));
-  background-image: linear-gradient(to bottom, #010203, #233a48, #317588, #3db7c2, #60fcf1);
+  background: #FEEFEB;
 }
 
 .stack .container {
   height: 100%;
-  padding-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,10 +361,6 @@ h4 {
   color: white;
 }
 
-.stack .container header h1 {
-  font-size: 3rem;
-}
-
 .stack .container .items {
   padding-top: 5rem;
 }
@@ -356,8 +368,9 @@ h4 {
 .stack .container .items .item {
   min-width: 300px;
   min-height: 500px;
-  background: #15191c;
+  background: #6279B8;
   border-radius: 0.25rem;
+  border: 3px solid #141414;
 }
 
 .stack .container .items .item .title {
@@ -379,7 +392,7 @@ h4 {
 .stack .container .items .item .fab {
   padding: 1rem 0;
   font-size: 3rem;
-  color: #60fcf1;
+  color: #FFFFFA;
 }
 
 .stack .container .items .item .lists {
@@ -411,12 +424,12 @@ h4 {
 }
 
 .stack .container .items .item .lists .list:first-child {
-  border-right: 1px solid #60fcf1;
-  border-bottom: 1px solid #60fcf1;
+  border-right: 1px solid #FFFFFA;
+  border-bottom: 1px solid #FFFFFA;
 }
 
 .stack .container .items .item .lists .list:last-child {
-  border-bottom: 1px solid #60fcf1;
+  border-bottom: 1px solid #FFFFFA;
 }
 
 .stack .container .items .item .lists .list li {
@@ -436,15 +449,12 @@ h4 {
 }
 
 .portfolio {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding-top: 8vh;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#010203), color-stop(#233a48), color-stop(#317588), color-stop(#3db7c2), to(#60fcf1));
-  background-image: linear-gradient(to top, #010203, #233a48, #317588, #3db7c2, #60fcf1);
+  background: url("../img/portfolio4.jpg") center center/cover no-repeat;
   padding-bottom: 5rem;
-}
-
-.portfolio header h1 {
-  font-size: 3rem;
 }
 
 .portfolio .portfolioMenu {
@@ -463,8 +473,8 @@ h4 {
 
 .portfolio .portfolioMenu .portfolioBtn {
   margin: 1rem 0.5rem;
-  background: #15191c;
-  border: none;
+  background: #6279B8;
+  border: 2px solid #141414;
   border-radius: 0.25rem;
   color: white;
   width: 200px;
@@ -476,7 +486,8 @@ h4 {
 }
 
 .portfolio .portfolioMenu .portfolioBtn:hover {
-  color: #60fcf1;
+  background: #FEEFEB;
+  color: #141414;
 }
 
 .portfolio .portfolioProjects {
@@ -497,12 +508,13 @@ h4 {
 }
 
 .portfolio .portfolioProjects .portfolioProject {
+  border: 3px solid #141414;
   position: relative;
   margin: 1rem 1rem;
   min-width: 500px;
   width: 30%;
   height: 600px;
-  background: #15191c;
+  background: #6279B8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,13 +542,14 @@ h4 {
   padding: 0 2rem;
   height: 35%;
   width: 90%;
+  overflow: visible;
 }
 
 .portfolio .portfolioProjects .portfolioProject .img img {
-  border: 1px solid #60fcf1;
+  border: 3px solid #141414;
+  border-radius: 0.25rem;
   height: 100%;
   width: 100%;
-  padding: 1px;
 }
 
 .portfolio .portfolioProjects .portfolioProject .description p {
@@ -545,7 +558,7 @@ h4 {
 }
 
 .portfolio .portfolioProjects .portfolioProject .description a {
-  color: #60fcf1;
+  color: #141414;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -579,7 +592,7 @@ h4 {
   right: 30%;
   left: 30%;
   height: 1px;
-  background: #60fcf1;
+  background: #FFFFFA;
 }
 
 .portfolio .portfolioProjects .portfolioProject .icons {
@@ -595,15 +608,11 @@ h4 {
           justify-content: space-between;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a {
-  color: white;
-}
-
 .portfolio .portfolioProjects .portfolioProject .icons a .fas,
 .portfolio .portfolioProjects .portfolioProject .icons a .far,
 .portfolio .portfolioProjects .portfolioProject .icons a .fab {
-  color: #60fcf1;
-  font-size: 4rem;
+  color: #FFFFFA;
+  font-size: 3rem;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -611,8 +620,7 @@ h4 {
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .fas,
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .far,
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
-  text-shadow: 0 0 10px #60fcf1;
-  color: #15191c;
+  color: #141414;
 }
 
 .portfolio .portfolioProjects .littleHack {
@@ -625,9 +633,8 @@ h4 {
 .footer {
   position: relative;
   padding: 2rem 0;
-  background: #010203;
-  -webkit-box-shadow: 0px -3px 3px 0px #60fcf1;
-          box-shadow: 0px -3px 3px 0px #60fcf1;
+  background: #6279B8;
+  border-top: 3px solid #141414;
 }
 
 .footer .container {
@@ -647,28 +654,52 @@ h4 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer .container .left .fas,
-.footer .container .left .far,
-.footer .container .left .fab {
-  font-size: 4rem;
-  color: #60fcf1;
+.footer .container .left .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.1rem;
 }
 
-.footer .container .left .fas:hover,
-.footer .container .left .far:hover,
-.footer .container .left .fab:hover {
-  color: white;
+.footer .container .left .item .fas,
+.footer .container .left .item .far,
+.footer .container .left .item .fab {
+  font-size: 4rem;
+  color: #FFFFFA;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0.5rem 0;
+}
+
+.footer .container .left .item:hover .fas,
+.footer .container .left .item:hover .far,
+.footer .container .left .item:hover .fab {
+  color: #141414;
 }
 
 .footer .container .right {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,7 +713,7 @@ h4 {
 }
 
 .footer .container .right p {
-  color: #60fcf1;
+  color: #FFFFFA;
 }
 
 @media (min-width: 160em) {

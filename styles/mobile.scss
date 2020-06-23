@@ -42,9 +42,9 @@
   }
   width: 15%;
   background: rgba($color: $tertiary-color, $alpha: 0.8);
-  border-bottom-left-radius: 0.2rem;
-  border-bottom: 1px solid $primary-color;
-  border-left: 1px solid $primary-color;
+  border-bottom-left-radius: 1rem;
+  border-bottom: $border-size-small solid $border-color;
+  border-left: $border-size-small solid $border-color;
   .burger-line {
     z-index: 2;
     width: 70%;
@@ -68,8 +68,11 @@
   height: auto;
   z-index: 1;
   box-shadow: none;
-  border-top: 1px solid $primary-color;
-  border-left: 1px solid $primary-color;
+  border-top: $border-size-med solid $border-color;
+  border-left: $border-size-med solid $border-color;
+  border-bottom: none;
+  border-radius: 0;
+  border-top-left-radius: 1rem;
   .links {
     flex-direction: column;
     .link {
