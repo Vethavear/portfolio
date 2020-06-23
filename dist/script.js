@@ -66,14 +66,31 @@ const slideNav = () => {
     }
 }
 
-
-const isMobile = () => {
-    return window.orientation > -1;
-}
-if (isMobile()) {
+const isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+if (isMobile.any()) {
 } else {
     window.addEventListener('scroll', slideNav);
 }
+
 portfolioMenu.addEventListener('click', e => {
     if (e.target.classList.contains('portfolioBtn')) {
         filter(e.target.dataset.type);
