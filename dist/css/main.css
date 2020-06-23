@@ -684,3 +684,28 @@ h4 {
 .footer .container .right p {
   color: #60fcf1;
 }
+
+@media (min-width: 160em) {
+  .container {
+    max-width: 1600px;
+  }
+  body {
+    font-size: 1.3em;
+  }
+  body .nav .links .link a {
+    font-size: 1.5rem;
+  }
+  body .whoami p {
+    font-size: 1.5rem;
+  }
+  body .stack .container .items {
+    gap: 4rem;
+  }
+  body .stack .container .items .item {
+    min-width: 400px;
+    min-height: 600px;
+  }
+  body .stack .container .items .item .lists .list {
+    min-height: 220px;
+  }
+}
