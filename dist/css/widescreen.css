@@ -83,7 +83,10 @@
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
-    border-top: 1px solid #60fcf1;
+    border: none;
+    border-top: 3px solid #141414;
+    border-bottom: none;
+    border-radius: 0;
   }
 }
 

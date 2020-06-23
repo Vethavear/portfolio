@@ -13,7 +13,10 @@
     top: initial;
 width:100%;
 box-shadow: none;
-border-top: 1px solid $primary-color;
+border:none;
+border-top: $border-size-med solid $border-color;
+border-bottom: none;
+border-radius: 0;
 }
 
 }

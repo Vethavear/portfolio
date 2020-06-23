@@ -121,10 +121,10 @@
   right: 0;
   height: 10%;
   width: 15%;
-  background: rgba(1, 2, 3, 0.8);
-  border-bottom-left-radius: 0.2rem;
-  border-bottom: 1px solid #60fcf1;
-  border-left: 1px solid #60fcf1;
+  background: rgba(98, 121, 184, 0.8);
+  border-bottom-left-radius: 1rem;
+  border-bottom: 2px solid #141414;
+  border-left: 2px solid #141414;
 }
 
 @media (orientation: landscape) {
@@ -137,7 +137,7 @@
   z-index: 2;
   width: 70%;
   height: 2px;
-  background: #60fcf1;
+  background: #FFFFFA;
 }
 
 .burger .burgerIcon {
@@ -145,7 +145,7 @@
 }
 
 .burger .burgerIcon .fas {
-  color: #60fcf1;
+  color: #FFFFFA;
   font-size: 1.5rem;
 }
 
@@ -160,8 +160,11 @@
   z-index: 1;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-top: 1px solid #60fcf1;
-  border-left: 1px solid #60fcf1;
+  border-top: 3px solid #141414;
+  border-left: 3px solid #141414;
+  border-bottom: none;
+  border-radius: 0;
+  border-top-left-radius: 1rem;
 }
 
 .nav .links {
@@ -187,7 +190,7 @@
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
-    border-top: 1px solid #60fcf1;
+    border-top: 1px solid #FFFFFA;
   }
   .nav .links {
     -webkit-box-orient: initial;
