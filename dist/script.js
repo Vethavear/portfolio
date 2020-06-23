@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav');
 const portfolioProjects = document.querySelectorAll('.portfolioProject');
-const portfolioMenu = document.querySelector('#portfolioMenu');
+const portfolioMenu = document.querySelector('.portfolioMenu');
 const burgerIcon = document.querySelector('.burgerIcon');
 const burger = document.querySelector('.burger');
 let scroll_position = 0;
@@ -56,25 +56,6 @@ const isInViewport = el => {
     );
 };
 
-const hideProjects = () => {
-    portfolioProjects.forEach(project => {
-        hideProject(project);
-    })
-}
-hideProjects();
-const showProjects = () => {
-
-    if (!projectsVisible) {
-
-        if (isInViewport(portfolioMenu)) {
-            portfolioProjects.forEach(project => {
-                showProject(project);
-            })
-            projectsVisible = true;
-        }
-    }
-}
-
 const slideNav = () => {
     scroll_direction = (document.body.getBoundingClientRect()).top > scroll_position ? 'up' : 'down';
     scroll_position = (document.body.getBoundingClientRect()).top;
@@ -86,7 +67,6 @@ const slideNav = () => {
 }
 
 
-
 const isMobile = () => {
     return window.orientation > -1;
 }
@@ -94,7 +74,6 @@ if (isMobile()) {
 } else {
     window.addEventListener('scroll', slideNav);
 }
-window.addEventListener('scroll', showProjects);
 portfolioMenu.addEventListener('click', e => {
     if (e.target.classList.contains('portfolioBtn')) {
         filter(e.target.dataset.type);
