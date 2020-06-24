@@ -110,9 +110,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -121,10 +121,9 @@
   right: 0;
   height: 10%;
   width: 15%;
-  background: rgba(98, 121, 184, 0.8);
-  border-bottom-left-radius: 1rem;
-  border-bottom: 2px solid #141414;
-  border-left: 2px solid #141414;
+  background: #242325;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
 }
 
 @media (orientation: landscape) {
@@ -135,9 +134,10 @@
 
 .burger .burger-line {
   z-index: 2;
+  margin: 0.2rem 0;
   width: 70%;
   height: 2px;
-  background: #FFFFFA;
+  background: #f4f4f4;
 }
 
 .burger .burgerIcon {
@@ -145,7 +145,7 @@
 }
 
 .burger .burgerIcon .fas {
-  color: #FFFFFA;
+  color: #f4f4f4;
   font-size: 1.5rem;
 }
 
@@ -158,13 +158,9 @@
   bottom: 0;
   height: auto;
   z-index: 1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-top: 3px solid #141414;
-  border-left: 3px solid #141414;
+  border-top: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
   border-bottom: none;
-  border-radius: 0;
-  border-top-left-radius: 1rem;
 }
 
 .nav .links {
@@ -190,7 +186,7 @@
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
-    border-top: 1px solid #FFFFFA;
+    border-top: 1px solid #f4f4f4;
   }
   .nav .links {
     -webkit-box-orient: initial;
@@ -225,31 +221,34 @@
   font-size: 3rem;
 }
 
-.showcase .showcase-content .header .about {
+.showcase .showcase-content .header .about .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+.showcase .showcase-content .header .about .container .img img {
+  width: 50%;
+}
+
 @media (orientation: landscape) {
-  .showcase .showcase-content .header .about .img img {
+  .showcase .showcase-content .header .about .container .img img {
     width: 40%;
   }
 }
 
-.showcase .showcase-content .header .about .whoami {
-  padding-top: 2rem;
-  margin-top: 1rem;
+.showcase .showcase-content .header .about .container .whoami {
+  margin: 1rem 0;
   width: 90%;
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .whoami .center {
+.showcase .showcase-content .header .about .container .whoami .center {
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .whoami .center .fas {
+.showcase .showcase-content .header .about .container .whoami .center .fas {
   font-size: 1.5rem;
 }
 

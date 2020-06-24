@@ -108,36 +108,33 @@ body {
   display: none !important;
 }
 
-.btnWhite {
-  padding: 1rem 0.5rem;
-  background: #333;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  color: white;
-  font-size: 1.1rem;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.brackets::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-left: 4px solid #f4f4f4;
+  border-top: 4px solid #f4f4f4;
 }
 
-.btnWhite:hover {
-  background: #f4f4f4;
-  color: black;
+.brackets::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-right: 4px solid #f4f4f4;
+  border-bottom: 4px solid #f4f4f4;
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0.5rem;
   font-family: "Source Code Pro", monospace;
+  color: #242325;
 }
 
 .items {
@@ -170,9 +167,11 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background: #333;
+  background: #242325;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
 }
 
 .nav .links {
@@ -190,7 +189,24 @@ body {
 }
 
 .nav .links .link {
+  position: relative;
   overflow: hidden;
+  padding: 1rem;
+}
+
+.nav .links .link::before, .nav .links .link::after {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-width: 2px;
+}
+
+.nav .links .link:hover a {
+  color: #f4f4f4;
+}
+
+.nav .links .link:hover::before, .nav .links .link:hover::after {
+  opacity: 1;
 }
 
 .nav .links .link a {
@@ -226,19 +242,25 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  color: #333;
+  color: #242325;
   padding-bottom: 10rem;
 }
 
 .showcase .showcase-content .header .about {
   width: 100%;
-  background: #333;
+  background: #242325;
 }
 
 .showcase .showcase-content .header .about .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .showcase .showcase-content .header .about .container .img {
@@ -269,20 +291,22 @@ body {
           flex: 1;
   color: white;
   line-height: 1.7;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 50%;
+  position: relative;
+}
+
+.showcase .showcase-content .header .about .container .whoami::after {
+  margin: 0 1.5rem;
 }
 
 .stack {
   padding-top: 8vh;
   min-height: 100vh;
-  background: #333;
+  background: #242325;
 }
 
 .stack .heading {
-  color: white;
+  color: #f4f4f4;
 }
 
 .stack .container {
@@ -300,7 +324,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
 }
 
 .stack .container .items {
@@ -315,7 +338,7 @@ body {
 }
 
 .stack .container .items .item * {
-  color: #333;
+  color: #242325;
 }
 
 .stack .container .items .item .title {
@@ -337,7 +360,7 @@ body {
 .stack .container .items .item .fab {
   padding: 1rem 0;
   font-size: 3rem;
-  color: #333;
+  color: #242325;
 }
 
 .stack .container .items .item .lists {
@@ -369,12 +392,12 @@ body {
 }
 
 .stack .container .items .item .lists .list:first-child {
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-right: 1px solid #242325;
+  border-bottom: 1px solid #242325;
 }
 
 .stack .container .items .item .lists .list:last-child {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #242325;
 }
 
 .stack .container .items .item .lists .list li {
@@ -402,6 +425,40 @@ body {
   padding-bottom: 5rem;
 }
 
+.portfolio .portfolioBtn {
+  margin: 1rem 0.5rem;
+  background: #242325;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .portfolioBtn::before, .portfolio .portfolioBtn::after {
+  opacity: 0;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  border-color: #242325;
+}
+
+.portfolio .portfolioBtn:hover {
+  background: #f4f4f4;
+  color: #242325;
+  font-weight: bold;
+}
+
+.portfolio .portfolioBtn:hover::before, .portfolio .portfolioBtn:hover::after {
+  opacity: 1;
+}
+
 .portfolio .portfolioMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,26 +471,6 @@ body {
           align-items: center;
   width: 100%;
   height: auto;
-}
-
-.portfolio .portfolioMenu .portfolioBtn {
-  margin: 1rem 0.5rem;
-  background: #333;
-  border: none;
-  border-radius: 0.25rem;
-  color: white;
-  width: 200px;
-  height: 70px;
-  cursor: pointer;
-  font-size: 1rem;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.portfolio .portfolioMenu .portfolioBtn:hover {
-  background: #f4f4f4;
-  color: #333;
-  border: 1px solid #333;
 }
 
 .portfolio .portfolioProjects {
@@ -459,7 +496,7 @@ body {
   min-width: 500px;
   width: 30%;
   height: 600px;
-  background: #333;
+  background: #242325;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,7 +573,7 @@ body {
   background: #f4f4f4;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons {
+.portfolio .portfolioProjects .portfolioProject .links {
   padding: 0.5rem 1rem;
   position: absolute;
   bottom: 0;
@@ -549,19 +586,52 @@ body {
           justify-content: space-between;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a .fas,
-.portfolio .portfolioProjects .portfolioProject .icons a .far,
-.portfolio .portfolioProjects .portfolioProject .icons a .fab {
+.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn {
+  background: #f4f4f4;
+  color: #242325;
+  margin: 0;
+  height: 50px;
+}
+
+.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn::before, .portfolio .portfolioProjects .portfolioProject .links .portfolioBtn::after {
+  border-color: #f4f4f4;
+}
+
+.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn:hover {
+  background: #242325;
+  color: white;
+}
+
+.portfolio .portfolioProjects .portfolioProject .links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .portfolioProjects .portfolioProject .links a .fas,
+.portfolio .portfolioProjects .portfolioProject .links a .far,
+.portfolio .portfolioProjects .portfolioProject .links a .fab {
   color: #f4f4f4;
   font-size: 3rem;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
-.portfolio .portfolioProjects .portfolioProject .icons a:hover .fas,
-.portfolio .portfolioProjects .portfolioProject .icons a:hover .far,
-.portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
+.portfolio .portfolioProjects .portfolioProject .links a:hover .fas,
+.portfolio .portfolioProjects .portfolioProject .links a:hover .far,
+.portfolio .portfolioProjects .portfolioProject .links a:hover .fab {
   color: white;
+  opacity: 0.7;
 }
 
 .portfolio .portfolioProjects .littleHack {
@@ -574,7 +644,7 @@ body {
 .footer {
   position: relative;
   padding: 2rem 0;
-  background: #333;
+  background: #242325;
 }
 
 .footer .container {
@@ -633,6 +703,7 @@ body {
 .footer .container .left .item:hover .far,
 .footer .container .left .item:hover .fab {
   color: white;
+  opacity: 0.7;
 }
 
 .footer .container .right {
@@ -653,7 +724,7 @@ body {
 }
 
 .footer .container .right p {
-  color: #333;
+  color: #242325;
 }
 
 @media (min-width: 160em) {

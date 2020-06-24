@@ -31,7 +31,7 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -41,20 +41,20 @@
     height: 15%;
   }
   width: 15%;
-  background: rgba($color: $tertiary-color, $alpha: 0.8);
-  border-bottom-left-radius: 1rem;
-  border-bottom: $border-size-small solid $border-color;
-  border-left: $border-size-small solid $border-color;
+  background: $primary-color;
+  border-bottom: 1px solid $secondary-color;
+  border-left: 1px solid $secondary-color;
   .burger-line {
     z-index: 2;
+    margin: 0.2rem 0;
     width: 70%;
     height: 2px;
-    background: $primary-color;
+    background: $secondary-color;
   }
   .burgerIcon {
     display: none;
     .fas {
-      color: $primary-color;
+      color: $secondary-color;
       font-size: 1.5rem;
     }
   }
@@ -67,12 +67,9 @@
   bottom: 0;
   height: auto;
   z-index: 1;
-  box-shadow: none;
-  border-top: $border-size-med solid $border-color;
-  border-left: $border-size-med solid $border-color;
+  border-top: 1px solid $secondary-color;
+  border-left: 1px solid $secondary-color;
   border-bottom: none;
-  border-radius: 0;
-  border-top-left-radius: 1rem;
   .links {
     flex-direction: column;
     .link {
@@ -91,12 +88,12 @@
     width: 100%;
     box-shadow: none;
     border: none;
-    border-top: 1px solid $primary-color;
+    border-top: 1px solid $secondary-color;
     .links {
       flex-direction: initial;
     }
   }
-  .footer{
+  .footer {
     margin-bottom: 8vh;
   }
 }
@@ -116,25 +113,31 @@
       }
       width: 100%;
       .about {
-        flex-direction: column;
-
-        @media (orientation: landscape) {
+        .container {
+          flex-direction: column;
           .img {
             img {
-              width: 40%;
+              width: 50%;
             }
           }
-        }
+          @media (orientation: landscape) {
+            .img {
+              img {
+                width: 40%;
+              }
+            }
+          }
 
-        .whoami {
-          padding-top: 2rem;
-          margin-top: 1rem;
-          width: 90%;
-          overflow: hidden;
-          .center {
+          .whoami {
+            // padding: 3rem 0;
+            margin: 1rem 0;
+            width: 90%;
             overflow: hidden;
-            .fas {
-              font-size: 1.5rem;
+            .center {
+              overflow: hidden;
+              .fas {
+                font-size: 1.5rem;
+              }
             }
           }
         }

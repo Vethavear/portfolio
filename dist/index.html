@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" media="screen and (max-width: 1439px) and (min-width: 1101px)" href="css/laptops.css">
   <link rel="stylesheet" media="screen and (max-width: 1100px) and (min-width: 767px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (min-width: 767px) and (orientation:landscape) and (max-height: 420px)"
+    href="css/mobile.css">
   <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css">
   <title>Veth's portfolio</title>
 </head>
@@ -25,43 +27,45 @@
   </div>
   <nav class="nav">
     <ul class="links">
-      <li class="link"><a href="#stack">Stack</a></li>
-      <li class="link"><a href="#portfolio">Portfolio</a></li>
-      <li class="link"><a href="#contact">Contact</a></li>
+      <li class="link brackets"><a href="#stack">Stack</a></li>
+      <li class="link brackets"><a href="#portfolio">Portfolio</a></li>
+      <li class="link brackets"><a href="#contact">Contact</a></li>
     </ul>
 
   </nav>
   <section class="showcase">
     <div class="showcase-content">
       <header class="header">
+        <h1 class="heading center my-2">// Welcome to my site</h1>
+
         <div class="about">
           <div class="container">
 
-          <div class="img">
-            <img src="./img/me.jpg" alt="my pic">
+            <div class="img">
+              <img src="./img/me.jpg" alt="my pic">
+            </div>
+            <div class="whoami brackets ts3">
+              <p>
+                <span class="span-color btext">I</span>'m Adrian, a frontend developer and also a trader.
+              </p>
+              <p>
+                <span class="span-color btext">B</span>y education I'm an IT engineer.
+              </p>
+              <p>
+                <span class="span-color btext"> P</span>rogramming is my passion since few years, same as trading.
+              </p>
+            </div>
           </div>
-          <div class="whoami ts3">
-            <p>
-              <span class="span-color btext">I</span>'m Adrian, a frontend developer and also a trader.
-            </p>
-            <p>
-              <span class="span-color btext">B</span>y education I'm an IT engineer.
-            </p>
-            <p>
-              <span class="span-color btext"> P</span>rogramming is my passion since few years, same as trading.
-            </p>
-          </div>
-        </div>
         </div>
       </header>
     </div>
   </section>
   <section class="stack">
     <header class="header center">
-      <h1 class="heading">My tools</h1>
+      <h1 class="heading">// My tools</h1>
     </header>
     <div class="container">
- 
+
       <div class="items" id="stack">
         <div class="item">
           <div class="title">
@@ -134,13 +138,13 @@
   </section>
   <section class="portfolio" id="portfolio">
     <header>
-      <h1 class="center heading">My projects</h1>
+      <h1 class="center heading">// My projects</h1>
     </header>
     <div class="portfolioMenu my-2" id="portfolioMenu">
-      <button class="portfolioBtn" data-type="all">All</button>
-      <button class="portfolioBtn" data-type="hc">HTML, CSS</button>
-      <button class="portfolioBtn" data-type="hcj">HTML, CSS, JS</button>
-      <button class="portfolioBtn" data-type="many">Many Technologies</button>
+      <button class="portfolioBtn brackets" data-type="all">All</button>
+      <button class="portfolioBtn brackets" data-type="hc">HTML, CSS</button>
+      <button class="portfolioBtn brackets" data-type="hcj">HTML, CSS, JS</button>
+      <button class="portfolioBtn brackets" data-type="many">Many Technologies</button>
     </div>
     <div class="portfolioProjects">
       <div class="portfolioProject" data-type="many">
@@ -164,7 +168,7 @@
           <p>Axios</p>
           <p>Firebase</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://github.com/Vethavear/forex-alerts"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
@@ -191,7 +195,7 @@
           <p>Google Mobile Vision</p>
           <p>Jasmine</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://github.com/Vethavear/Mobile-colloquium-verifier"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
@@ -211,7 +215,7 @@
           <p>JS</p>
           <p>jQuery</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/personaltrainer/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/personaltrainer"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -232,7 +236,7 @@
           <p>JS</p>
           <p>jQuery</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/Rzeszow-Kitchens/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/Rzeszow-Kitchens"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -253,9 +257,9 @@
           <p>JS</p>
           <p>jQuery</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/agency/dist/index.html"><i class="far fa-eye "></i></a>
-          <a href="http://themeatelier.net/site-templates/station/" class="btnWhite">Original website</a>
+          <button class="portfolioBtn brackets">Original website</button>
           <a href="https://github.com/Vethavear/agency"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
@@ -275,7 +279,7 @@
           <p>JS</p>
           <p>jQuery</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://github.com/Vethavear/portfolio"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
@@ -294,7 +298,7 @@
           <p>SASS</p>
           <p>JS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/signup-form/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/signup-form"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -314,7 +318,7 @@
           <p>SASS</p>
           <p>JS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/login-form/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/login-form"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -334,7 +338,7 @@
           <p>SASS</p>
           <p>JS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/login-signupSPA/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/login-signupSPA"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -354,7 +358,7 @@
           <p>HTML</p>
           <p>SASS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/chinese-restaurant/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/chinese-restaurant"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -373,7 +377,7 @@
           <p>HTML</p>
           <p>SASS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/barber/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/barber"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -392,7 +396,7 @@
           <p>HTML</p>
           <p>SASS</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/cafe/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/cafe"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -415,7 +419,7 @@
           <p>Axios</p>
           <p>Webpack</p>
         </div>
-        <div class="icons">
+        <div class="links">
           <a href="https://vethavear.github.io/food-searcher/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="https://github.com/Vethavear/food-searcher"><i class="fab fa-github-alt"></i></a>
         </div>
@@ -427,10 +431,11 @@
   <footer class="footer" id="contact">
     <div class="container">
       <div class="left">
-       
-          <a href="mailto:adrian.bury@gmail.com" target="_blank" class="item">E-mail<i class="far fa-envelope"></i></a>
-    
-        <a href="https://github.com/Vethavear" target="_blank" class="item">Github<i class="fab fa-github-square"></i></a>
+
+        <a href="mailto:adrian.bury@gmail.com" target="_blank" class="item">E-mail<i class="far fa-envelope"></i></a>
+
+        <a href="https://github.com/Vethavear" target="_blank" class="item">Github<i
+            class="fab fa-github-square"></i></a>
       </div>
       <div class="right">
         <p>Adrian Bury &copy;2020</p>
