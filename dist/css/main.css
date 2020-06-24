@@ -119,9 +119,8 @@ h4 {
   padding: 1rem 0.5rem;
   background: #FFFFFA;
   border: none;
-  border-radius: 0.25rem;
-  border: 2px solid #141414;
   cursor: pointer;
+  border-radius: 0.25rem;
   color: #141414;
   font-size: 1.1rem;
   -webkit-transition: 0.5s all;
@@ -138,7 +137,7 @@ h4 {
 }
 
 .btnWhite:hover {
-  background: #FEEFEB;
+  background: #ffffff;
   color: black;
 }
 
@@ -217,6 +216,7 @@ h4 {
 .showcase {
   height: 100vh;
   background: url("../img/bg.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .showcase .showcase-content {
@@ -341,7 +341,7 @@ h4 {
 .stack {
   padding-top: 8vh;
   min-height: 100vh;
-  background: #FEEFEB;
+  background: #ffffff;
 }
 
 .stack .container {
@@ -454,6 +454,7 @@ h4 {
   padding-top: 8vh;
   min-height: 100vh;
   background: url("../img/portfolio4.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   padding-bottom: 5rem;
 }
 
@@ -486,7 +487,7 @@ h4 {
 }
 
 .portfolio .portfolioMenu .portfolioBtn:hover {
-  background: #FEEFEB;
+  background: #ffffff;
   color: #141414;
 }
 
