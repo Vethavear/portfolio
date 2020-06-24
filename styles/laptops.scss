@@ -3,7 +3,7 @@
 .showcase {
     .showcase-content {
         .header {
-            width:60%;
+            width:100%;
             .about {
                 .img {
                 }
@@ -11,3 +11,19 @@
         }
     }
 }
+.stack {
+    .container {
+      .items {
+        gap: 4rem;
+        .item {
+          min-width: 300px;
+          min-height: 500px;
+          .lists {
+            .list {
+              min-height: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
