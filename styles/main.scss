@@ -43,9 +43,8 @@ h4 {
   padding: 1rem 0.5rem;
   background: $primary-color;
   border: none;
-  border-radius: 0.25rem;
-  border: $border-size-small solid $border-color;
   cursor: pointer;
+  border-radius: 0.25rem;
   color: $border-color;
   font-size: 1.1rem;
   transition: 0.5s all;
@@ -117,6 +116,7 @@ h4 {
 .showcase {
   height: 100vh;
   background: url("../img/bg.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   // background: $primary-color;
   .showcase-content {
     height: 100%;
@@ -263,6 +263,8 @@ h4 {
   min-height: 100vh;
   // background: $primary-color;
   background: url("../img/portfolio4.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+
   .portfolioMenu {
     display: flex;
     justify-content: center;
