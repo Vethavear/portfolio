@@ -33,27 +33,34 @@ body {
 .displayNone {
   display: none !important;
 }
-.btnWhite {
-  padding: 1rem 0.5rem;
-  background: $primary-color;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  color: $text-color;
-  font-size: 1.1rem;
-  transition: 0.5s all;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:hover {
-    background: $secondary-color;
-    color: black;
+
+.brackets {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-left: 4px solid $secondary-color;
+    border-top: 4px solid $secondary-color;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 4px solid $secondary-color;
+    border-bottom: 4px solid $secondary-color;
   }
 }
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0.5rem;
   font-family: "Source Code Pro", monospace;
+  color: $primary-color;
 }
 .items {
   display: grid;
@@ -79,6 +86,8 @@ body {
   right: 0;
   background: $primary-color;
   transition: all 0.5s;
+  border-bottom: 1px solid $secondary-color;
+  border-left: 1px solid $secondary-color;
 
   .links {
     height: 100%;
@@ -88,8 +97,24 @@ body {
     list-style-type: none;
 
     .link {
+      position: relative;
       overflow: hidden;
-
+      padding: 1rem;
+      &::before,
+      &::after {
+        opacity: 0;
+        transition: all 0.5s;
+        border-width: 2px;
+      }
+      &:hover {
+        a {
+          color: $secondary-color;
+        }
+        &::before,
+        &::after {
+          opacity: 1;
+        }
+      }
       a {
         padding: 1rem 0;
         font-size: 1.3rem;
@@ -104,7 +129,6 @@ body {
   background: $secondary-color;
   .showcase-content {
     height: 100%;
-    // background: rgba(1, 1, 1, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +142,8 @@ body {
         background: $primary-color;
         .container {
           display: flex;
-
+          justify-content: center;
+          align-items: center;
           .img {
             display: flex;
             justify-content: center;
@@ -135,8 +160,11 @@ body {
             flex: 1;
             color: $text-color;
             line-height: 1.7;
-            align-self: center;
             width: 50%;
+            position: relative;
+            &::after{
+              margin: 0 1.5rem;
+            }
           }
         }
       }
@@ -152,18 +180,16 @@ body {
   min-height: 100vh;
   background: $primary-color;
   .heading {
-    color: $text-color;
+    color: $secondary-color;
   }
   .container {
     height: 100%;
     max-width: 1600px;
-    // background: rgba(1, 1, 1, 0.5);
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $text-color;
     .items {
       padding-top: 5rem;
       .item {
@@ -228,30 +254,42 @@ body {
   min-height: 100vh;
   background: $secondary-color;
 
+  .portfolioBtn {
+    margin: 1rem 0.5rem;
+    background: $primary-color;
+    border: none;
+    border-radius: 0.25rem;
+    color: $text-color;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.25s;
+    position: relative;
+    transition: 0.5s all;
+
+    &::before,
+    &::after {
+      opacity: 0;
+      transition: 1s all;
+      border-color: $primary-color;
+    }
+    &:hover {
+      background: $secondary-color;
+      color: $primary-color;
+      font-weight: bold;
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
   .portfolioMenu {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    .portfolioBtn {
-      margin: 1rem 0.5rem;
-      background: $primary-color;
-      border: none;
-      border-radius: 0.25rem;
-      color: $text-color;
-      width: 200px;
-      height: 70px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: all 0.25s;
-      &:hover {
-        background: $secondary-color;
-        color: $primary-color;
-        border: 1px solid $primary-color;
-        
-      }
-    }
   }
   .portfolioProjects {
     padding: 0 5%;
@@ -326,14 +364,32 @@ body {
           background: $secondary-color;
         }
       }
-      .icons {
+      .links {
         padding: 0.5rem 1rem;
         position: absolute;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        .portfolioBtn {
+          background: $secondary-color;
+          color: $primary-color;
+          margin: 0;
+          height: 50px;
+          &::before,
+          &::after {
+            border-color: $secondary-color;
+          }
+          &:hover {
+            background: $primary-color;
+            color: $text-color;
+          }
+        }
         a {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
           .fas,
           .far,
           .fab {
@@ -346,6 +402,7 @@ body {
             .far,
             .fab {
               color: $text-color;
+              opacity: 0.7;
             }
           }
         }
@@ -393,6 +450,7 @@ body {
           .far,
           .fab {
             color: $text-color;
+            opacity: 0.7;
           }
         }
       }
