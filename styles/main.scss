@@ -13,8 +13,8 @@ body {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-.primary-color {
-  color: $primary-color;
+.span-color {
+  color: $secondary-color;
 }
 .hideNav {
   transform: translateX(100%);
@@ -51,12 +51,9 @@ body {
   }
 }
 .heading {
-  // background: $tertiary-color;
   font-size: 4rem;
   padding: 0.5rem;
-  color: $tertiary-color;
   font-family: "Source Code Pro", monospace;
-
 }
 .items {
   display: grid;
@@ -80,9 +77,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background: $tertiary-color;
+  background: $primary-color;
   transition: all 0.5s;
-
 
   .links {
     height: 100%;
@@ -98,7 +94,6 @@ body {
         padding: 1rem 0;
         font-size: 1.3rem;
         color: $text-color;
-        
       }
     }
   }
@@ -106,9 +101,7 @@ body {
 
 .showcase {
   height: 100vh;
-  // background: url("../img/bg.jpg") center center/cover no-repeat;
-  background-attachment: fixed;
-  // background: $primary-color;
+  background: $secondary-color;
   .showcase-content {
     height: 100%;
     // background: rgba(1, 1, 1, 0.8);
@@ -122,8 +115,7 @@ body {
 
       .about {
         width: 100%;
-        background: $tertiary-color;
-
+        background: $primary-color;
         .container {
           display: flex;
 
@@ -156,11 +148,12 @@ body {
 }
 
 .stack {
+  padding-top: 8vh;
   min-height: 100vh;
-  // background-image: linear-gradient(to bottom, $tertiary-color, #233a48, #317588, #3db7c2, $primary-color);
-  // background: $secondary-color;
-  // background: url("../img/portfolio4.jpg") center center/cover no-repeat;
-  // background-attachment: fixed;
+  background: $primary-color;
+  .heading {
+    color: $text-color;
+  }
   .container {
     height: 100%;
     max-width: 1600px;
@@ -174,6 +167,9 @@ body {
     .items {
       padding-top: 5rem;
       .item {
+        * {
+          color: $primary-color;
+        }
         min-width: 400px;
         min-height: 500px;
         background: $secondary-color;
@@ -230,7 +226,7 @@ body {
   transition: all 0.5s;
   padding-top: 8vh;
   min-height: 100vh;
-  // background: $primary-color;
+  background: $secondary-color;
 
   .portfolioMenu {
     display: flex;
@@ -240,8 +236,8 @@ body {
     height: auto;
     .portfolioBtn {
       margin: 1rem 0.5rem;
-      background: $secondary-color;
-      border: 1px solid $primary-color;
+      background: $primary-color;
+      border: none;
       border-radius: 0.25rem;
       color: $text-color;
       width: 200px;
@@ -250,8 +246,10 @@ body {
       font-size: 1rem;
       transition: all 0.25s;
       &:hover {
-        background: $primary-color;
-        color: black;
+        background: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        
       }
     }
   }
@@ -272,7 +270,7 @@ body {
       min-width: 500px;
       width: 30%;
       height: 600px;
-      background: $secondary-color;
+      background: $primary-color;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -288,6 +286,7 @@ body {
         overflow: visible;
         img {
           border-radius: 0.25rem;
+          border: 1px solid $secondary-color;
           height: 100%;
           width: 100%;
         }
@@ -324,7 +323,7 @@ body {
           right: 30%;
           left: 30%;
           height: 1px;
-          background: $primary-color;
+          background: $secondary-color;
         }
       }
       .icons {
@@ -338,7 +337,7 @@ body {
           .fas,
           .far,
           .fab {
-            color: $primary-color;
+            color: $secondary-color;
             font-size: 3rem;
             transition: 0.25s all;
           }
@@ -364,7 +363,7 @@ body {
 .footer {
   position: relative;
   padding: 2rem 0;
-  background: $secondary-color;
+  background: $primary-color;
   .container {
     display: flex;
     justify-content: space-evenly;
@@ -385,7 +384,7 @@ body {
         .far,
         .fab {
           font-size: 4rem;
-          color: $primary-color;
+          color: $secondary-color;
           transition: all 0.5s;
           padding: 0.5rem 0;
         }

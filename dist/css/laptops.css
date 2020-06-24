@@ -69,5 +69,18 @@
 }
 
 .showcase .showcase-content .header {
-  width: 60%;
+  width: 100%;
+}
+
+.stack .container .items {
+  gap: 4rem;
+}
+
+.stack .container .items .item {
+  min-width: 300px;
+  min-height: 500px;
+}
+
+.stack .container .items .item .lists .list {
+  min-height: 220px;
 }

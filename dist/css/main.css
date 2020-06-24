@@ -82,8 +82,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.primary-color {
-  color: #FFFFFA;
+.span-color {
+  color: #f4f4f4;
 }
 
 .hideNav {
@@ -110,11 +110,11 @@ body {
 
 .btnWhite {
   padding: 1rem 0.5rem;
-  background: #FFFFFA;
+  background: #333;
   border: none;
   cursor: pointer;
   border-radius: 0.25rem;
-  color: #ffffff;
+  color: white;
   font-size: 1.1rem;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -130,17 +130,13 @@ body {
 }
 
 .btnWhite:hover {
-  background: #ffffff;
+  background: #f4f4f4;
   color: black;
 }
 
 .heading {
   font-size: 4rem;
   padding: 0.5rem;
-  color: #333;
-  border-bottom: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
-  text-shadow: 2px 1px #ffffff;
   font-family: "Source Code Pro", monospace;
 }
 
@@ -205,7 +201,7 @@ body {
 
 .showcase {
   height: 100vh;
-  background-attachment: fixed;
+  background: #f4f4f4;
 }
 
 .showcase .showcase-content {
@@ -230,7 +226,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  color: #FFFFFA;
+  color: #333;
   padding-bottom: 10rem;
 }
 
@@ -280,7 +276,13 @@ body {
 }
 
 .stack {
+  padding-top: 8vh;
   min-height: 100vh;
+  background: #333;
+}
+
+.stack .heading {
+  color: white;
 }
 
 .stack .container {
@@ -308,9 +310,12 @@ body {
 .stack .container .items .item {
   min-width: 400px;
   min-height: 500px;
-  background: #333;
+  background: #f4f4f4;
   border-radius: 0.25rem;
-  border: 3px solid #ffffff;
+}
+
+.stack .container .items .item * {
+  color: #333;
 }
 
 .stack .container .items .item .title {
@@ -332,7 +337,7 @@ body {
 .stack .container .items .item .fab {
   padding: 1rem 0;
   font-size: 3rem;
-  color: #FFFFFA;
+  color: #333;
 }
 
 .stack .container .items .item .lists {
@@ -364,12 +369,12 @@ body {
 }
 
 .stack .container .items .item .lists .list:first-child {
-  border-right: 1px solid #FFFFFA;
-  border-bottom: 1px solid #FFFFFA;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 .stack .container .items .item .lists .list:last-child {
-  border-bottom: 1px solid #FFFFFA;
+  border-bottom: 1px solid #333;
 }
 
 .stack .container .items .item .lists .list li {
@@ -393,6 +398,7 @@ body {
   transition: all 0.5s;
   padding-top: 8vh;
   min-height: 100vh;
+  background: #f4f4f4;
   padding-bottom: 5rem;
 }
 
@@ -413,7 +419,7 @@ body {
 .portfolio .portfolioMenu .portfolioBtn {
   margin: 1rem 0.5rem;
   background: #333;
-  border: 2px solid #ffffff;
+  border: none;
   border-radius: 0.25rem;
   color: white;
   width: 200px;
@@ -425,8 +431,9 @@ body {
 }
 
 .portfolio .portfolioMenu .portfolioBtn:hover {
-  background: #ffffff;
-  color: #ffffff;
+  background: #f4f4f4;
+  color: #333;
+  border: 1px solid #333;
 }
 
 .portfolio .portfolioProjects {
@@ -447,7 +454,6 @@ body {
 }
 
 .portfolio .portfolioProjects .portfolioProject {
-  border: 3px solid #ffffff;
   position: relative;
   margin: 1rem 1rem;
   min-width: 500px;
@@ -485,8 +491,8 @@ body {
 }
 
 .portfolio .portfolioProjects .portfolioProject .img img {
-  border: 3px solid #ffffff;
   border-radius: 0.25rem;
+  border: 1px solid #f4f4f4;
   height: 100%;
   width: 100%;
 }
@@ -497,13 +503,9 @@ body {
 }
 
 .portfolio .portfolioProjects .portfolioProject .description a {
-  color: #ffffff;
+  color: white;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
-}
-
-.portfolio .portfolioProjects .portfolioProject .description a:hover {
-  color: white;
 }
 
 .portfolio .portfolioProjects .portfolioProject .techs {
@@ -531,7 +533,7 @@ body {
   right: 30%;
   left: 30%;
   height: 1px;
-  background: #FFFFFA;
+  background: #f4f4f4;
 }
 
 .portfolio .portfolioProjects .portfolioProject .icons {
@@ -550,7 +552,7 @@ body {
 .portfolio .portfolioProjects .portfolioProject .icons a .fas,
 .portfolio .portfolioProjects .portfolioProject .icons a .far,
 .portfolio .portfolioProjects .portfolioProject .icons a .fab {
-  color: #FFFFFA;
+  color: #f4f4f4;
   font-size: 3rem;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -559,7 +561,7 @@ body {
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .fas,
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .far,
 .portfolio .portfolioProjects .portfolioProject .icons a:hover .fab {
-  color: #ffffff;
+  color: white;
 }
 
 .portfolio .portfolioProjects .littleHack {
@@ -573,7 +575,6 @@ body {
   position: relative;
   padding: 2rem 0;
   background: #333;
-  border-top: 3px solid #ffffff;
 }
 
 .footer .container {
@@ -622,7 +623,7 @@ body {
 .footer .container .left .item .far,
 .footer .container .left .item .fab {
   font-size: 4rem;
-  color: #FFFFFA;
+  color: #f4f4f4;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding: 0.5rem 0;
@@ -631,7 +632,7 @@ body {
 .footer .container .left .item:hover .fas,
 .footer .container .left .item:hover .far,
 .footer .container .left .item:hover .fab {
-  color: #ffffff;
+  color: white;
 }
 
 .footer .container .right {
@@ -652,7 +653,7 @@ body {
 }
 
 .footer .container .right p {
-  color: #FFFFFA;
+  color: #333;
 }
 
 @media (min-width: 160em) {
