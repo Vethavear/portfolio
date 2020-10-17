@@ -44,23 +44,88 @@
             <div class="img">
               <img src="./img/me.jpg" alt="my pic">
             </div>
-            <div class="whoami brackets ts3">
-              <p>
-                <span class="span-color btext">I</span>'m Adrian, a frontend developer and also a trader.
-              </p>
-              <p>
-                <span class="span-color btext">B</span>y education I'm an IT engineer.
-              </p>
-              <p>
-                <span class="span-color btext"> P</span>rogramming is my passion since few years, same as trading.
-              </p>
+            <div class="intro">
+
+              <div class="whoami brackets ts3">
+                <p>
+                  <span class="span-color btext">I</span>'m Adrian, a frontend developer.
+                </p>
+                <p>
+                  <span class="span-color btext">S</span>ince June 2020 I'm an IT engineer.
+                </p>
+                <p>
+                  <span class="span-color btext"> P</span>rogramming became my passion few years ago.
+                </p>
+              </div>
+              <div class="introLinks">
+                <a class="link" href="#portfolio">
+                  <button class="portfolioBtn portfolioBtnAlt brackets">My projects</button>
+                </a>
+                <a class="link" href="#portfolio">
+                  <button class="portfolioBtn portfolioBtnAlt brackets">My tools</button>
+                </a>
+                <a class="link" href="#about">
+                  <button class="portfolioBtn portfolioBtnAlt brackets">About me</button>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </header>
     </div>
   </section>
-  <section class="stack">
+  <section class="myTools">
+    <header class="header center">
+      <h1 class="heading">// My tools</h1>
+    </header>
+    <div class="content" id="stack">
+      <div class="item">
+        <h2 class="title">What I'm using everyday</h2>
+        <p class="description">Initaly, I was making websites only with plain JS, to laid proper fundation for my
+          further developement.
+          After many months of intense learning, I decided to move onto framework. I choosed React over Angular (In
+          which I made my engineer project) because I decided that functional programming is my way to go.</p>
+        <!-- <i class="fas fa-briefcase"></i> -->
+
+        <ul class="list">
+          <li class="listItem">HTML <span class="icon fab fa-html5" style="color: #FC4919"></span></li>
+          <li class="listItem">CSS <span class="icon fab fa-css3-alt" style="color: #2196F3"></span></li>
+          <li class="listItem">SASS <span class="icon fab fa-sass" style="color: #CD6699"></span></li>
+          <li class="listItem">JavaScript <span class="icon fab fa-js" style="color: #E3BA42"></span></li>
+          <li class="listItem">React & Redux<span class="icon fab fa-react" style="color: #04D9FF"></span></li>
+          <li class="listItem">npm <span class="icon fab fa-npm" style="color: #CC3534"></span></li>
+          <li class="listItem">Firebase <img class="icon"src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg" alt="Firebase"></li>
+          <li class="listItem">git <span class="icon fab fa-git" style="color: #F05033"></span></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h2 class="title">What I'm using everyday</h2>
+        <p class="description">Initaly, I was making websites only with plain JS, to laid proper fundation for my
+          further developement.
+          After many months of intense learning, I decided to move onto framework. I choosed React over Angular (In
+          which I made my engineer project) because I decided that functional programming is my way to go.</p>
+        <!-- <i class="fas fa-briefcase"></i> -->
+        <div class="lists">
+          <ul class="list">
+            <li>HTML <i class="fab fa-html5"></i></li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+          <ul class="list">
+            <li>npm</li>
+            <li>Firebase</li>
+            <li>git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- <section class="stack">
     <header class="header center">
       <h1 class="heading">// My tools</h1>
     </header>
@@ -132,22 +197,19 @@
 
         </div>
       </div>
-
-
     </div>
-  </section>
+  </section> -->
   <section class="portfolio" id="portfolio">
     <header>
       <h1 class="center heading">// My projects</h1>
     </header>
     <div class="portfolioMenu my-2" id="portfolioMenu">
       <button class="portfolioBtn brackets" data-type="all">All</button>
-      <button class="portfolioBtn brackets" data-type="hc">HTML, CSS</button>
-      <button class="portfolioBtn brackets" data-type="hcj">HTML, CSS, JS</button>
-      <button class="portfolioBtn brackets" data-type="many">Many Technologies</button>
+      <button class="portfolioBtn brackets" data-type="basic">Basic</button>
+      <button class="portfolioBtn brackets" data-type="advanced">Advanced</button>
     </div>
     <div class="portfolioProjects">
-      <div class="portfolioProject" data-type="many">
+      <div class="portfolioProject" data-type="advanced">
         <h3 class="title py-2">Forex Alerts</h3>
         <div class="img">
           <img
@@ -158,7 +220,7 @@
           <p class="my-2 px-2">Project designed for internal use in a trading group. Major features include alerts for
             Forex pairs using <a href="https://www.freeforexapi.com">Free Forex API</a>, trade journaling, individual
             trader and whole group statistics. Made with my friend
-            <a href="https://github.com/drozd1krystian">Krystian.</a>
+            <a class="friendLink" href="https://github.com/drozd1krystian">Krystian.</a>
           </p>
         </div>
         <div class="techs">
@@ -172,7 +234,7 @@
           <a href="https://github.com/Vethavear/forex-alerts"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="many">
+      <div class="portfolioProject" data-type="advanced">
         <h3 class="title py-2">Mobile colloquium verifier</h3>
         <div class="img">
           <img
@@ -181,7 +243,7 @@
         </div>
         <div class="description">
           <p class="my-2 px-2">Engineer project. Allows teacher to verify unique tests with smartphone. It
-            is a part of bigger system with web app which creates tests and was made by my friend <a
+            is a part of bigger system with web app which creates tests and was made by my friend <a class="friendLink"
               href="https://github.com/drozd1krystian">Krystian.</a></p>
         </div>
         <div class="techs">
@@ -199,7 +261,7 @@
           <a href="https://github.com/Vethavear/Mobile-colloquium-verifier"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Personal Trainer</h3>
         <div class="img">
           <img
@@ -220,7 +282,7 @@
           <a href="https://github.com/Vethavear/personaltrainer"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Rzeszów Kitchens</h3>
         <div class="img">
           <img
@@ -241,7 +303,7 @@
           <a href="https://github.com/Vethavear/Rzeszow-Kitchens"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Advertising Agency</h3>
         <div class="img">
           <img
@@ -260,13 +322,13 @@
         <div class="links">
           <a href="https://vethavear.github.io/agency/dist/index.html"><i class="far fa-eye "></i></a>
           <a href="http://themeatelier.net/site-templates/station/">
-            <button class="portfolioBtn brackets">Original website</button>
+            <button class="portfolioBtn portfolioBtnAlt brackets">Original website</button>
           </a>
 
           <a href="https://github.com/Vethavear/agency"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Portfolio</h3>
         <div class="img">
           <img
@@ -286,7 +348,7 @@
           <a href="https://github.com/Vethavear/portfolio"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Signup form</h3>
         <div class="img">
           <img
@@ -306,7 +368,7 @@
           <a href="https://github.com/Vethavear/signup-form"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Login form</h3>
         <div class="img">
           <img
@@ -326,7 +388,7 @@
           <a href="https://github.com/Vethavear/login-form"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hcj">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">SPA Login & Signup</h3>
         <div class="img">
           <img
@@ -346,7 +408,7 @@
           <a href="https://github.com/Vethavear/login-signupSPA"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hc">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Chinese Restaurant</h3>
         <div class="img">
           <img
@@ -366,7 +428,7 @@
           <a href="https://github.com/Vethavear/chinese-restaurant"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hc">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Barber</h3>
         <div class="img">
           <img
@@ -385,7 +447,7 @@
           <a href="https://github.com/Vethavear/barber"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="hc">
+      <div class="portfolioProject" data-type="basic">
         <h3 class="title py-2">Cafe</h3>
         <div class="img">
           <img
@@ -404,7 +466,7 @@
           <a href="https://github.com/Vethavear/cafe"><i class="fab fa-github-alt"></i></a>
         </div>
       </div>
-      <div class="portfolioProject" data-type="many">
+      <div class="portfolioProject" data-type="advanced">
         <h3 class="title py-2">Diet Calc</h3>
         <div class="img">
           <img

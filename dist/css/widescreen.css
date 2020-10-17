@@ -115,6 +115,10 @@
   padding: 0 0.5rem;
 }
 
+.showcase .showcase-content .header .about .intro .introLinks .portfolioBtnAlt {
+  width: 110px;
+}
+
 .showcase .showcase-content .header .about .whoami {
   padding-top: 2rem;
   margin-top: 1rem;

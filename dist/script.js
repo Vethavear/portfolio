@@ -107,12 +107,10 @@ nav.addEventListener('click', e => {
     burger.classList.toggle('hideLines');
 
 })
-$('.links .link a').on('click', function (event) {
+$('.link a, .link').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
-
         const hash = this.hash;
-
         $('html, body').animate({
             scrollTop: $(hash).offset().top - 100
 

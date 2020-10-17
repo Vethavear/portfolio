@@ -88,6 +88,12 @@
   display: none;
 }
 
+.portfolioBtn {
+  font-size: 0.8rem;
+  margin: 1rem 0.2rem;
+  border-radius: 0.6rem;
+}
+
 .showMenu {
   -webkit-transform: translateX(0) !important;
           transform: translateX(0) !important;
@@ -238,18 +244,25 @@
   }
 }
 
-.showcase .showcase-content .header .about .container .whoami {
-  margin: 1rem 0;
+.showcase .showcase-content .header .about .container .intro {
   width: 90%;
+}
+
+.showcase .showcase-content .header .about .container .intro .whoami {
+  margin: 1rem 0;
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .container .whoami .center {
+.showcase .showcase-content .header .about .container .intro .whoami .center {
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .container .whoami .center .fas {
+.showcase .showcase-content .header .about .container .intro .whoami .center .fas {
   font-size: 1.5rem;
+}
+
+.showcase .showcase-content .header .about .container .intro .introLinks .portfolioBtnAlt {
+  width: 90px;
 }
 
 .stack .container .items {
@@ -258,10 +271,7 @@
 }
 
 .portfolio .portfolioMenu .portfolioBtn {
-  font-size: 0.8rem;
-  margin: 1rem 0.2rem;
   width: 300px;
-  border-radius: 0.6rem;
 }
 
 .portfolio .portfolioProjects {

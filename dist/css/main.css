@@ -86,6 +86,11 @@ body {
   color: #f4f4f4;
 }
 
+.friendLink {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .hideNav {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -106,6 +111,57 @@ body {
 
 .displayNone {
   display: none !important;
+}
+
+.portfolioBtn {
+  margin: 1rem 0.5rem;
+  background: #242325;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolioBtn::before, .portfolioBtn::after {
+  opacity: 0;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  border-color: #242325;
+}
+
+.portfolioBtn:hover {
+  background: #f4f4f4;
+  color: #242325;
+  font-weight: bold;
+}
+
+.portfolioBtn:hover::before, .portfolioBtn:hover::after {
+  opacity: 1;
+}
+
+.portfolioBtnAlt {
+  background: #f4f4f4;
+  color: #242325;
+  margin: 0;
+  height: 50px;
+  width: 150px;
+}
+
+.portfolioBtnAlt::before, .portfolioBtnAlt::after {
+  border-color: #f4f4f4;
+}
+
+.portfolioBtnAlt:hover {
+  background: #242325;
+  color: white;
 }
 
 .brackets::before {
@@ -284,19 +340,128 @@ body {
   width: 80%;
 }
 
-.showcase .showcase-content .header .about .container .whoami {
+.showcase .showcase-content .header .about .container .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.showcase .showcase-content .header .about .container .intro .whoami {
   padding: 0 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: white;
   line-height: 1.7;
-  width: 50%;
+  width: 100%;
   position: relative;
 }
 
-.showcase .showcase-content .header .about .container .whoami::after {
+.showcase .showcase-content .header .about .container .intro .whoami::after {
   margin: 0 1.5rem;
+}
+
+.showcase .showcase-content .header .about .container .intro .introLinks {
+  width: 100%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.myTools {
+  padding: 8vh 0;
+  background: #242325;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myTools .heading {
+  color: #f4f4f4;
+}
+
+.myTools .content {
+  padding: 3rem;
+  width: 85vw;
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4f4f4;
+  border-radius: 0.25rem;
+}
+
+.myTools .content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 1rem 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myTools .content .item .description {
+  line-height: 1.7;
+  padding: 1rem;
+}
+
+.myTools .content .item .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myTools .content .item .list .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.myTools .content .item .list .listItem .icon {
+  font-size: 100px;
+  height: 100px;
 }
 
 .stack {
@@ -425,40 +590,6 @@ body {
   padding-bottom: 5rem;
 }
 
-.portfolio .portfolioBtn {
-  margin: 1rem 0.5rem;
-  background: #242325;
-  border: none;
-  border-radius: 0.25rem;
-  color: white;
-  width: 200px;
-  height: 70px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  position: relative;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.portfolio .portfolioBtn::before, .portfolio .portfolioBtn::after {
-  opacity: 0;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  border-color: #242325;
-}
-
-.portfolio .portfolioBtn:hover {
-  background: #f4f4f4;
-  color: #242325;
-  font-weight: bold;
-}
-
-.portfolio .portfolioBtn:hover::before, .portfolio .portfolioBtn:hover::after {
-  opacity: 1;
-}
-
 .portfolio .portfolioMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,6 +602,16 @@ body {
           align-items: center;
   width: 100%;
   height: auto;
+}
+
+.portfolio .portfolioMenu .brackets::before {
+  border-left: 4px solid #242325;
+  border-top: 4px solid #242325;
+}
+
+.portfolio .portfolioMenu .brackets::after {
+  border-right: 4px solid #242325;
+  border-bottom: 4px solid #242325;
 }
 
 .portfolio .portfolioProjects {
@@ -584,23 +725,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn {
-  background: #f4f4f4;
-  color: #242325;
-  margin: 0;
-  height: 50px;
-  width: 150px;
-}
-
-.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn::before, .portfolio .portfolioProjects .portfolioProject .links .portfolioBtn::after {
-  border-color: #f4f4f4;
-}
-
-.portfolio .portfolioProjects .portfolioProject .links .portfolioBtn:hover {
-  background: #242325;
-  color: white;
 }
 
 .portfolio .portfolioProjects .portfolioProject .links a {

@@ -16,6 +16,11 @@
 .littleHack {
   display: none;
 }
+.portfolioBtn {
+  font-size: 0.8rem;
+  margin: 1rem 0.2rem;
+  border-radius: 0.6rem;
+}
 .showMenu {
   transform: translateX(0) !important;
 }
@@ -127,16 +132,21 @@
               }
             }
           }
-
-          .whoami {
-            // padding: 3rem 0;
-            margin: 1rem 0;
+          .intro {
             width: 90%;
-            overflow: hidden;
-            .center {
+            .whoami {
+              margin: 1rem 0;
               overflow: hidden;
-              .fas {
-                font-size: 1.5rem;
+              .center {
+                overflow: hidden;
+                .fas {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+            .introLinks{
+              .portfolioBtnAlt{
+                width:90px;
               }
             }
           }
@@ -156,11 +166,9 @@
 
 .portfolio {
   .portfolioMenu {
-    .portfolioBtn {
-      font-size: 0.8rem;
-      margin: 1rem 0.2rem;
-      width: 300px;
-      border-radius: 0.6rem;
+    .portfolioBtn{
+  width: 300px;
+
     }
   }
   .portfolioProjects {
