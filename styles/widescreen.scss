@@ -34,6 +34,11 @@
             width: 100%;
             .about {
                 padding: 0 0.5rem;
+                .intro{
+                    .introLinks{
+                        .portfolioBtnAlt{
+                          width: 110px;
+                        }}}
                 .whoami {
                     padding-top: 2rem;
                     margin-top: 1rem;
@@ -57,30 +62,13 @@
         }
     }
 }
-.stack {
-    .container {
-        .items {
-            gap: 2rem;
-            .item {
-                min-width: 300px;
-                min-height: 500px;
-                .lists {
-                    .list {
-                        min-height: 220px;
-                    }
-                }
-            }
-        }
-    }
+.myTools {
+.content{
+    width: 95vw;
+}
 }
 @media (orientation: portrait) {
-    .stack {
-        .container {
-            .items {
-                grid-template-columns: 1fr;
-            }
-        }
-    }
+
     .footer {
         margin-bottom: 8vh;
     }

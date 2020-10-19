@@ -72,15 +72,11 @@
   width: 100%;
 }
 
-.stack .container .items {
-  gap: 4rem;
-}
-
-.stack .container .items .item {
-  min-width: 300px;
-  min-height: 500px;
-}
-
-.stack .container .items .item .lists .list {
-  min-height: 220px;
+.myTools .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

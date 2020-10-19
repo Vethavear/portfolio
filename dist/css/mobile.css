@@ -88,6 +88,12 @@
   display: none;
 }
 
+.portfolioBtn {
+  font-size: 0.8rem;
+  margin: 1rem 0.2rem;
+  border-radius: 0.6rem;
+}
+
 .showMenu {
   -webkit-transform: translateX(0) !important;
           transform: translateX(0) !important;
@@ -238,30 +244,33 @@
   }
 }
 
-.showcase .showcase-content .header .about .container .whoami {
+.showcase .showcase-content .header .about .container .intro {
+  width: auto;
+}
+
+.showcase .showcase-content .header .about .container .intro .whoami {
   margin: 1rem 0;
-  width: 90%;
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .container .whoami .center {
+.showcase .showcase-content .header .about .container .intro .whoami .center {
   overflow: hidden;
 }
 
-.showcase .showcase-content .header .about .container .whoami .center .fas {
+.showcase .showcase-content .header .about .container .intro .whoami .center .fas {
   font-size: 1.5rem;
 }
 
-.stack .container .items {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.showcase .showcase-content .header .about .container .intro .introLinks .portfolioBtnAlt {
+  width: 90px;
+}
+
+.myTools .content {
+  width: 99vw;
 }
 
 .portfolio .portfolioMenu .portfolioBtn {
-  font-size: 0.8rem;
-  margin: 1rem 0.2rem;
   width: 300px;
-  border-radius: 0.6rem;
 }
 
 .portfolio .portfolioProjects {
