@@ -133,7 +133,7 @@
             }
           }
           .intro {
-            width: 90%;
+            width: auto;
             .whoami {
               margin: 1rem 0;
               overflow: hidden;
@@ -156,14 +156,11 @@
   }
 }
 
-.stack {
-  .container {
-    .items {
-      grid-template-columns: 1fr;
-    }
+.myTools{
+  .content{
+    width: 99vw;
   }
 }
-
 .portfolio {
   .portfolioMenu {
     .portfolioBtn{

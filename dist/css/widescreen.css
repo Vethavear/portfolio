@@ -140,24 +140,11 @@
   }
 }
 
-.stack .container .items {
-  gap: 2rem;
-}
-
-.stack .container .items .item {
-  min-width: 300px;
-  min-height: 500px;
-}
-
-.stack .container .items .item .lists .list {
-  min-height: 220px;
+.myTools .content {
+  width: 95vw;
 }
 
 @media (orientation: portrait) {
-  .stack .container .items {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   .footer {
     margin-bottom: 8vh;
   }

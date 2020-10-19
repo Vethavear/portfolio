@@ -245,7 +245,7 @@
 }
 
 .showcase .showcase-content .header .about .container .intro {
-  width: 90%;
+  width: auto;
 }
 
 .showcase .showcase-content .header .about .container .intro .whoami {
@@ -265,9 +265,8 @@
   width: 90px;
 }
 
-.stack .container .items {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.myTools .content {
+  width: 99vw;
 }
 
 .portfolio .portfolioMenu .portfolioBtn {
