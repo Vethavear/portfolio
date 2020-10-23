@@ -470,123 +470,6 @@ body {
   height: 100px;
 }
 
-.stack {
-  padding-top: 8vh;
-  min-height: 100vh;
-  background: #242325;
-}
-
-.stack .heading {
-  color: #f4f4f4;
-}
-
-.stack .container {
-  height: 100%;
-  max-width: 1600px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.stack .container .items {
-  padding-top: 5rem;
-}
-
-.stack .container .items .item {
-  min-width: 400px;
-  min-height: 500px;
-  background: #f4f4f4;
-  border-radius: 0.25rem;
-}
-
-.stack .container .items .item * {
-  color: #242325;
-}
-
-.stack .container .items .item .title {
-  min-height: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.stack .container .items .item .fas,
-.stack .container .items .item .far,
-.stack .container .items .item .fab {
-  padding: 1rem 0;
-  font-size: 3rem;
-  color: #242325;
-}
-
-.stack .container .items .item .lists {
-  margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.stack .container .items .item .lists .list {
-  min-height: 190px;
-  padding: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  list-style-type: none;
-}
-
-.stack .container .items .item .lists .list:first-child {
-  border-right: 1px solid #242325;
-  border-bottom: 1px solid #242325;
-}
-
-.stack .container .items .item .lists .list:last-child {
-  border-bottom: 1px solid #242325;
-}
-
-.stack .container .items .item .lists .list li {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Source Code Pro", monospace;
-  text-align: center;
-  padding: 0.35rem 0;
-}
-
 .portfolio {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -772,6 +655,133 @@ body {
   height: 600px;
 }
 
+.aboutMe {
+  padding: 8vh 5vw;
+  width: 100%;
+  background: #242325;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .heading {
+  color: #f4f4f4;
+}
+
+.aboutMe .content {
+  margin-top: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #f4f4f4;
+  border-radius: 0.25rem;
+  display: flex;
+}
+
+.aboutMe .content img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.aboutMe .content .aboutMeText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.aboutMe .content .aboutMeText .title, .aboutMe .content .aboutMeText .subtitle {
+  text-align: center;
+}
+
+.aboutMe .content .aboutMeText .subtitle {
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+.aboutMe .content .aboutMeText .aboutMeList {
+  list-style: none;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutMe .content .aboutMeText .aboutMeList .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+}
+
+.aboutMe .content .aboutMeText .aboutMeList .listItem .icon {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.aboutMe .content .aboutMeText .passions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutMe .content .aboutMeText .passions .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .content .aboutMeText .passions .items .item {
+  padding: 1rem;
+}
+
+.aboutMe .content .aboutMeText .passions .items .item .icon {
+  font-size: 1.5rem;
+}
+
 .footer {
   position: relative;
   padding: 2rem 0;
@@ -870,15 +880,5 @@ body {
   }
   body .whoami p {
     font-size: 1.5rem;
-  }
-  body .stack .container .items {
-    gap: 4rem;
-  }
-  body .stack .container .items .item {
-    min-width: 400px;
-    min-height: 600px;
-  }
-  body .stack .container .items .item .lists .list {
-    min-height: 220px;
   }
 }
