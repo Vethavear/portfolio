@@ -199,3 +199,26 @@
     }
   }
 }
+
+.aboutMe{
+  .content{
+    img{
+      width:100%;
+    }
+    .aboutMeText{
+      .aboutMeList{
+        padding: 0;
+        .listItem{
+          .icon{
+            margin: 0;
+            // padding: 2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+          }
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}
