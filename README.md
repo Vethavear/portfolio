@@ -20,7 +20,7 @@ My portfolio!
 
 ## Live 📍
 https://adrianbury.netlify.app
-https://vethavear.github.io/portfolio/dist/
+
 
 ## License 🔱
 All rights reserved by me.
