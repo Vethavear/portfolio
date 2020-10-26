@@ -310,7 +310,7 @@
 }
 
 .aboutMe .content img {
-  height: 50vh;
+  width: 100%;
 }
 
 .aboutMe .content .aboutMeText .aboutMeList {
@@ -323,7 +323,6 @@
 
 .aboutMe .content .aboutMeText .aboutMeList .listItem .icon {
   margin: 0;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

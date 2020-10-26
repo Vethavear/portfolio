@@ -203,7 +203,7 @@
 .aboutMe{
   .content{
     img{
-      height: 50vh;
+      width:100%;
     }
     .aboutMeText{
       .aboutMeList{
@@ -211,7 +211,7 @@
         .listItem{
           .icon{
             margin: 0;
-            padding: 2rem;
+            // padding: 2rem;
             display:flex;
             justify-content:center;
             align-items:center;
