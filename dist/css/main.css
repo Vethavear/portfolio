@@ -468,6 +468,7 @@ body {
 .myTools .content .item .list .listItem .icon {
   font-size: 100px;
   height: 100px;
+  overflow: hidden;
 }
 
 .portfolio {
