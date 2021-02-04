@@ -878,9 +878,6 @@ ul {
   .portfolio .projects .project .projectContent .projectDescription {
     padding: 0;
   }
-  .portfolio .projects .project .projectContent .projectDescription .projectStyle .projectStyleItem .itemAnswer {
-    width: 100%;
-  }
   .portfolio .projects .project .projectContent .projectDescription .projectStyle .projectStyleItem .itemAnswer .smallLink {
     white-space: pre-wrap;
     /* CSS3 */
