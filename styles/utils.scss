@@ -1,9 +1,14 @@
 // $primary-color: #EBF0FF;
-$primary-color: #242325;
-$secondary-color: #f4f4f4;
+$primary-color: #191919;
+$secondary-color: #F0F2EF;
 $text-color: white;
-
-
+$border-color:  rgba(117, 117, 117, 0.295);
+$bp-small: 769px;
+$bp-medium: 1025px;
+$mqs-small: "(max-width: #{$bp-small})";
+$mqs-medium: "(max-width: #{$bp-medium})";
+$bp-large: 1367px;
+$mqs-large: "(max-width: #{$bp-large})";
 .py-1 {
   padding: 1rem 0;
 }
