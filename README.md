@@ -8,14 +8,13 @@
 </p>
 
 ## Project Overview 🎉
-My portfolio!
+My minimalist Portfolio.
 ## Tech/framework used 🔧
 
 | Tech                                                    
 | -------------------------------------------------------
 | HTML                           
-| SASS                           
-| JS                                                     
+| SASS                                                                               
 
 
 ## Live 📍
